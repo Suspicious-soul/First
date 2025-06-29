@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quote - Texas Pools Service & Maintenance</title>
+    <style>
+        * {
+            font-size: 9px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #111;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 32px 24px 24px 24px;
+        }
+
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 8px;
+        }
+
+        .header-table td {
+            font-size: 12px;
+            color: #222;
+            padding: 0;
+        }
+
+        .company-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .company-address {
+            font-size: 10px;
+            margin-bottom: 16px;
+        }
+
+        .quote-to-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+        }
+
+        .quote-to-table td {
+            vertical-align: top;
+            font-size: 15px;
+            padding: 0 16px 0 0;
+        }
+
+        .quote-to-label {
+            font-weight: bold;
+            font-size: 14px;
+            padding-bottom: 4px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+
+        .items-table th,
+        .items-table td {
+            border: 1px solid black;
+            padding: 6px 8px;
+            text-align: left;
+        }
+
+        .items-table th {
+            font-weight: bold;
+            font-size: 15px;
+            text-align: left;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        .items-table .right {
+            text-align: right;
+        }
+
+        .items-table .center {
+            text-align: center;
+        }
+
+        .items-table .section-row td {
+            border-top: 2px solid #222;
+            font-weight: bold;
+            background: #fff;
+            font-size: 15px;
+            padding-top: 10px;
+        }
+
+        .totals-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .totals-table td {
+            border: none;
+            padding: 4px 8px;
+        }
+
+        .totals-table .label {
+            text-align: right;
+            font-weight: normal;
+            width: 90%;
+        }
+
+        .totals-table .value {
+            text-align: right;
+            font-weight: normal;
+            width: 10%;
+        }
+
+        .totals-table .total-row {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .notes-section {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .notes-section .label {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .signature-section {
+            margin-top: 32px;
+            font-size: 15px;
+        }
+
+        .signature-label {
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .signature-line {
+            width: 300px;
+            height: 18px;
+            margin-left: 8px;
+            margin-bottom: 2px;
+        }
+
+        .footer-link {
+            font-size: 11px;
+            color: #222;
+            margin-top: 24px;
+            text-align: left;
+        }
+
+        @media print {
+            .container {
+                width: 100%;
+                padding: 0;
+            }
+
+            .footer-link {
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table class="header-table">
+            <tr>
+                <td style="width:33%; text-align:left;">{{formatDateWithTimeZone created_at 'DD/MM/YYYY HH:mm'
+                    timezone}}</td>
+                <td
+                    style="width:34%; text-align:center; white-space:nowrap; font-size:10px; font-weight: normal; font-family:Arial, sans-serif;">
+                    Texas Pools Service & Maintenance | Pool Office Manager</td>
+                <td style="width:33%; text-align:right;"></td>
+            </tr>
+        </table>
+        <div class="company-title">Texas Pools Service & Maintenance</div>
+        <div class="company-address">435 Spring Hill Drive</div>
+        <br>
+        <table class="quote-to-table">
+            <tr>
+                <td colspan="3" class="quote-to-label"
+                    style="font-size:12px; font-weight:bold; font-family:Arial, sans-serif;">Quote To</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="padding-bottom: 12px;"></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="padding-bottom: 18px; font-size: 12px;">{{ customer.customer_first_name }} {{
+                    customer.customer_last_name }}</td>
+            </tr>
+            <tr>
+                <td style="width:33%; vertical-align:top;"><span
+                        style="font-weight:bold; font-size:12px; font-family:Arial, sans-serif;">Address</span><br><span
+                        style="font-size: 10px;">{{
+                        customer_service_address.street }}, {{ customer_service_address.city }}<br>{{
+                        customer_service_address.state }} {{ customer_service_address.zip_code }}</span></td>
+                <td style="width:33%; vertical-align:top;"><span
+                        style="font-weight:bold; font-size:12px; font-family:Arial, sans-serif;">Billing
+                        Address</span><br><span style="font-size: 10px;">{{ customer_billing_address.street }}, {{
+                        customer_billing_address.city }}<br>{{ customer_billing_address.state }} {{
+                        customer_billing_address.zip_code }}</span></td>
+                <td style="width:34%; vertical-align:top;"><span
+                        style="font-weight:bold; font-size:12px; font-family:Arial, sans-serif;">Phone</span><br><span
+                        style="font-size: 10px;">{{#if customer.customer_contact_no.mobile}}
+                        {{ customer.customer_contact_no.mobile }}
+                        {{else if customer.customer_contact_no.work}}
+                        {{ customer.customer_contact_no.work }}
+                        {{else}}
+                        {{ customer.customer_contact_no.home }}
+                        {{/if}}</span></td>
+            </tr>
+        </table>
+        <br>
+        <table class="items-table" style="border: 1px solid black; border-collapse: collapse;">
+            <tr>
+                <th style="width:5%; font-size:12px; font-weight:bold; font-family:Arial, sans-serif;">Qty.</th>
+                <th style="width:18%; font-size:12px; font-weight:bold; font-family:Arial, sans-serif;">Name</th>
+                <th style="width:32%; font-size:12px; font-weight:bold; font-family:Arial, sans-serif;">Description</th>
+                <th style="width:10%; font-size:12px; font-weight:bold; font-family:Arial, sans-serif;">Accepted</th>
+                <th style="width:15%; font-size:12px; font-weight:bold; font-family:Arial, sans-serif;">Unit Price</th>
+                <th style="width:15%; font-size:12px; font-weight:bold; font-family:Arial, sans-serif;">Total</th>
+            </tr>
+            <tr class="section-row">
+                <td colspan="6" style="border: none; padding-top: 18px; padding-bottom: 6px;"><u>Services</u></td>
+            </tr>
+            {{#each (filterEntries line_items 'product_type' 'SERVICE')}}
+            <tr style="border: none;">
+                <td class="center" style="border: none;">{{ quantity }}</td>
+                <td style="border: none;">{{ name }}</td>
+                <td style="border: none;">{{ description }}</td>
+                <td style="border: none;"></td>
+                <td class="right" style="border: none;">{{ formatCurrency unit_price "en-US" "USD" }}</td>
+                <td class="right" style="border: none;">{{ formatCurrency total "en-US" "USD" }}</td>
+            </tr>
+            {{/each}}
+            <tr class="section-row">
+                <td colspan="6" style="border: none; padding-top: 18px; padding-bottom: 6px;"><u>Items Used</u></td>
+            </tr>
+            {{#each (filterEntries line_items 'product_type' 'PARTS')}}
+            <tr style="border: none;">
+                <td class="center" style="border: none;">{{ quantity }}</td>
+                <td style="border: none;">{{ name }}</td>
+                <td style="border: none;">{{ description }}</td>
+                <td style="border: none;"></td>
+                <td class="right" style="border: none;">{{ formatCurrency unit_price "en-US" "USD" }}</td>
+                <td class="right" style="border: none;">{{ formatCurrency total "en-US" "USD" }}</td>
+            </tr>
+            {{/each}}
+            {{#each (filterEntries line_items 'product_type' 'PRODUCT')}}
+            <tr style="border: none;">
+                <td class="center" style="border: none;">{{ quantity }}</td>
+                <td style="border: none;">{{ name }}</td>
+                <td style="border: none;">{{ description }}</td>
+                <td style="border: none;"></td>
+                <td class="right" style="border: none;">{{ formatCurrency unit_price "en-US" "USD" }}</td>
+                <td class="right" style="border: none;">{{ formatCurrency total "en-US" "USD" }}</td>
+            </tr>
+            {{/each}}
+            <tfoot>
+                <tr style="border: none;">
+                    <td colspan="4" style="border: none;"></td>
+                    <td class="label" style="text-align:right; border: none;">SubTotal</td>
+                    <td class="value" style="text-align:right; border: none;">{{sub_total}}</td>
+                </tr>
+                <tr style="border: none;">
+                    <td colspan="4" style="border: none;"></td>
+                    <td class="label" style="text-align:right; border: none;">Tax</td>
+                    <td class="value" style="text-align:right; border: none;">
+                        {{#each tax}}
+                        {{#if tax_amount}}
+                        {{formatCurrency tax_amount "en-US" "USD"}}
+                        {{else}}
+                        $0.00
+                        {{/if}}
+                        {{/each}}
+
+
+                    </td>
+                </tr>
+                <tr class="total-row" style="border: none;">
+                    <td colspan="4" style="border: none;"></td>
+                    <td class="label" style="text-align:right; border: none;">Total</td>
+                    <td class="value" style="text-align:right; border: none;">{{total}}</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="notes-section">
+            <div class="label">Notes</div>
+            <div>{{#each custom_fields}} {{#stringEqStrict label "Notes" }} {{#if value}} {{value}} {{/if}}
+                {{/stringEqStrict}} {{/each}}</div>
+            <br>
+            <div class="label">Quote Notes</div>
+            <div></div>
+            <br>
+            <div class="label">By signing this quote the customer agrees to the following:</div> <br>
+            <div style="font-size:12px;">
+                By selecting Accept and Sign, I agree that the signature and initials will be the electronic
+                representation of my signature and initials for all purposes when I (or my agent) use them on documents,
+                including legally binding contracts - just the same as a pen-and-paper signature or initial.
+            </div>
+        </div>
+        <div class="signature-section">
+            <span class="signature-label">Signature:</span> <span class="signature-line">{{#each status_history}}
+                {{#stringEqStrict status_name "APPROVED"}}
+                <img style="width:100px;height:30px;" src="{{customer_signature}}"><br>
+                {{/stringEqStrict}}
+                {{/each}}</span><br><br>
+            <span class="signature-label">Print:</span> <span class="signature-line"></span><br><br>
+            <span class="signature-label">Date:</span> <span style="font-weight:bold;">{{formatDateWithTimeZone
+                created_at 'DD/MM/YYYY'
+                timezone}}</span>
+        </div>
+        <div class="footer-link">
+
+        </div>
+    </div>
+</body>
+
+</html>

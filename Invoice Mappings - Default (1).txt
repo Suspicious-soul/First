@@ -1,0 +1,49 @@
+Customer Billto: {{ customer_billing_address.city }} {{ customer_billing_address.state }} {{ customer_billing_address.street }} {{ customer_billing_address.country }} {{ customer_billing_address.zip_code }}
+
+Invoice Number: {{ invoice_no }}
+Invoice Date : {{formatDateWithTimeZone invoice_date 'MM/DD/YYYY' timezone}}
+Term : {{ payment_term.payment_term_name }}
+Invoice Due date :  {{formatDateWithTimeZone due_date 'MM/DD/YYYY' timezone}}
+
+Line Item:{{#each line_items}}
+ </tr>
+      {{#each line_items}}
+      <tr>
+        <td>{{product_id}}</td>
+        <td>{{description}}</td>
+        <td class="text-right">{{quantity}}</td>
+        <td class="text-right">
+ {{#if unit_price}}
+            {{formatCurrency unit_price "en-US" "USD"}}
+          {{/if}}
+{{#if total}}
+          {{formatCurrency total "en-US" "USD"}}
+        {{/if}}
+Price :{{unit_price}}
+Total : {{total}}
+Invoice Line Item header Component: 
+{{#each line_items}}
+            {{#is line_item_type 'HEADER'}}
+            <tr>
+                <td style="font-size: 10px;background-color: #BEBEBE;width: 20%;text-align: center;">
+                    <b>PROPOSED</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20%; color: black; text-align: left;" colspan="3"><b>{{name}}</b></td>
+            </tr>
+        <tr>
+            <td style="width:10%; color: black; text-align: left;"><b>QTY</b></td>
+            <td style="width:55%; color: black"><b>DESCRIPTION</b></td>
+            <td style="width:20%; color: black; text-align: left;"><b>UNIT PRICE</b></td>
+            <td style="width:10%; color: black; text-align: left;"><b>TOTAL</b></td>
+        </tr>
+            {{else}}
+        <tr>
+            <td style="padding-top:6px;font-size: 10px;text-align: left;">{{quantity}}</td>
+            <td style="padding-top:6px; text-align: left;font-size: 10px;">{{{description}}}</td>
+            <td style="padding-top:6px; text-align: left;font-size: 10px;">{{formatCurrency unit_price "en-US" "USD"}}</td>
+            <td style="text-align: left; padding-top:6px;font-size: 10px;">{{formatCurrency total "en-US" "USD"}}</td>
+        </tr>
+            {{/is}}
+        {{/each}}

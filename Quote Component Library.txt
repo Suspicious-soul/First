@@ -1,0 +1,712 @@
+attachments._id: {{ attachments[]._id }}
+attachments.attachment_uid: {{ attachments[].attachment_uid }}
+Estimate No: {{ estimate_no }}
+Estimate Date: {{ formatDateWithTimeZone estimate_date 'MM/DD/YYYY' timezone }}
+Expiry Date: {{ formatDateWithTimeZone expiry_date 'YYYY/MM/DD' timezone }}
+Remarks: {{ remarks }}
+
+Signature Approval: {{#each status_history}}
+                {{#stringEqStrict status_name "APPROVED"}}
+                <img style="width:100px;height:30px;" src="{{customer_signature}}"><br>
+                {{/stringEqStrict}}
+                {{/each}}
+Quote Accepted/ Approved Date:  {{#each status_history}}
+                {{#stringEqStrict status_name "APPROVED"}}
+                {{formatDateWithTimeZone created_at "MM-DD-YYYY" ../timezone}} <br>
+                {{/stringEqStrict}}
+                {{/each}}
+
+Customer Name: {{ customer.customer_first_name }} {{ customer.customer_last_name }}
+Email: {{ customer.customer_email }}
+Contact No: {{ customer.customer_contact_no.mobile }}
+
+Service Address (Street): {{ customer_service_address.street }}
+Service Address (City, State, Zip): {{ customer_service_address.city }}, {{ customer_service_address.state }} {{ customer_service_address.zip_code }}
+
+Organization Name: {{ organization.organization_name }}
+Organization Street: {{ organization.organization_address.street }}
+Organization City: {{ organization.organization_address.city }}
+Organization State & Zip: {{ organization.organization_address.state }} {{ organization.organization_address.zip_code }}
+
+Job Title: {{ job.job_title }}
+Job Description (HTML): {{{ job.job_description }}}
+Scheduled Start: {{ formatDateWithTimeZone job.scheduled_start_time 'MM/DD/YYYY' timezone }}
+Scheduled End: {{ formatDateWithTimeZone job.scheduled_end_time 'MM/DD/YYYY' timezone }}
+Job Status: {{ job.current_job_status.status_name }}
+
+Project Name: {{ project.project_name }}
+Project Category: {{ project.project_category.category_name }}
+Project Priority: {{ project.project_priority }}
+Project Status: {{ project.project_current_status.project_status_name }}
+Project Due Date: {{ formatDateWithTimeZone project.project_due_date 'MM/DD/YYYY' timezone }}
+
+Customer Billing Address: {{ customer.customer_billing_address.street }}, {{ customer.customer_billing_address.city }}, {{ customer.customer_billing_address.state }} {{ customer.customer_billing_address.zip_code }}
+
+{{#each customer.custom_fields}}
+Customer Custom Field - {{ label }}: {{ value }}
+{{/each}}
+
+{{#each job.custom_fields}}
+Job Custom Field - {{ label }}: {{ value }}
+{{/each}}
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Unit Price</th>
+      <th>Quantity</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each line_items}}
+      <tr>
+        <td>
+          {{#if description}}
+            {{#split description '\n'}}
+              <p style="white-space: pre-line">{{.}}</p>
+            {{/split}}
+          {{/if}}
+        </td>
+        <td>{{#if unit_price}}{{ formatCurrency unit_price "en-US" "USD" }}{{/if}}</td>
+        <td style="text-align: center;">{{ quantity }}</td>
+        <td style="text-align: right;">{{#if total}}{{ formatCurrency total "en-US" "USD" }}{{/if}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+Sub Total: {{ formatCurrency sub_total "en-US" "USD" }}
+Discount: {{ total_discount }}
+Grand Total: {{ formatCurrency total "en-US" "USD" }}
+
+Created By: {{ created_by.first_name }} {{ created_by.last_name }}
+attachments.created_at: {{ attachments[].created_at }}
+attachments.created_by.created_at: {{ attachments[].created_by.created_at }}
+attachments.created_by.designation: {{ attachments[].created_by.designation }}
+attachments.created_by.email: {{ attachments[].created_by.email }}
+attachments.created_by.emp_code: {{ attachments[].created_by.emp_code }}
+attachments.created_by.external_login_id: {{ attachments[].created_by.external_login_id }}
+attachments.created_by.first_name: {{ attachments[].created_by.first_name }}
+attachments.created_by.home_phone_number: {{ attachments[].created_by.home_phone_number }}
+attachments.created_by.hourly_labor_charge: {{ attachments[].created_by.hourly_labor_charge }}
+attachments.created_by.is_active: {{ attachments[].created_by.is_active }}
+attachments.created_by.is_deleted: {{ attachments[].created_by.is_deleted }}
+attachments.created_by.last_name: {{ attachments[].created_by.last_name }}
+attachments.created_by.mobile_phone_number: {{ attachments[].created_by.mobile_phone_number }}
+attachments.created_by.prefix: {{ attachments[].created_by.prefix }}
+attachments.created_by.profile_picture: {{ attachments[].created_by.profile_picture }}
+attachments.created_by.updated_at: {{ attachments[].created_by.updated_at }}
+attachments.created_by.user_uid: {{ attachments[].created_by.user_uid }}
+attachments.created_by.work_phone_number: {{ attachments[].created_by.work_phone_number }}
+attachments.file_name: {{ attachments[].file_name }}
+attachments.url: {{ attachments[].url }}
+attachments.visible_to_customer: {{ attachments[].visible_to_customer }}
+created_at: {{ created_at }}
+created_by.created_at: {{ created_by.created_at }}
+created_by.designation: {{ created_by.designation }}
+created_by.email: {{ created_by.email }}
+created_by.emp_code: {{ created_by.emp_code }}
+created_by.external_login_id: {{ created_by.external_login_id }}
+created_by.first_name: {{ created_by.first_name }}
+created_by.home_phone_number: {{ created_by.home_phone_number }}
+created_by.hourly_labor_charge: {{ created_by.hourly_labor_charge }}
+created_by.is_active: {{ created_by.is_active }}
+created_by.is_deleted: {{ created_by.is_deleted }}
+created_by.last_name: {{ created_by.last_name }}
+created_by.mobile_phone_number: {{ created_by.mobile_phone_number }}
+created_by.prefix: {{ created_by.prefix }}
+created_by.profile_picture: {{ created_by.profile_picture }}
+created_by.updated_at: {{ created_by.updated_at }}
+created_by.user_uid: {{ created_by.user_uid }}
+created_by.work_phone_number: {{ created_by.work_phone_number }}
+custom_field_internal_object.estimate_notes:_1: {{ custom_field_internal_object.estimate_notes:_1 }}
+custom_field_internal_object.estimate_scope_of_work_1: {{ custom_field_internal_object.estimate_scope_of_work_1 }}
+custom_fields._id: {{ custom_fields[]._id }}
+custom_fields.hide_field: {{ custom_fields[].hide_field }}
+custom_fields.hide_to_fe: {{ custom_fields[].hide_to_fe }}
+custom_fields.label: {{ custom_fields[].label }}
+custom_fields.module_name: {{ custom_fields[].module_name }}
+custom_fields.read_only: {{ custom_fields[].read_only }}
+custom_fields.type: {{ custom_fields[].type }}
+custom_fields.value: {{ custom_fields[].value }}
+customer.accounts.credits: {{ customer.accounts.credits }}
+customer.accounts.ltv: {{ customer.accounts.ltv }}
+customer.accounts.receivables: {{ customer.accounts.receivables }}
+customer.accounts.tax.tax_exempt: {{ customer.accounts.tax.tax_exempt }}
+customer.created_at: {{ customer.created_at }}
+customer.custom_fields._id: {{ customer.custom_fields[]._id }}
+customer.custom_fields.hide_field: {{ customer.custom_fields[].hide_field }}
+customer.custom_fields.hide_to_fe: {{ customer.custom_fields[].hide_to_fe }}
+customer.custom_fields.label: {{ customer.custom_fields[].label }}
+customer.custom_fields.module_name: {{ customer.custom_fields[].module_name }}
+customer.custom_fields.read_only: {{ customer.custom_fields[].read_only }}
+customer.custom_fields.type: {{ customer.custom_fields[].type }}
+customer.custom_fields.value: {{ customer.custom_fields[].value }}
+customer.customer_address.city: {{ customer.customer_address.city }}
+customer.customer_address.country: {{ customer.customer_address.country }}
+customer.customer_address.email: {{ customer.customer_address.email }}
+customer.customer_address.first_name: {{ customer.customer_address.first_name }}
+customer.customer_address.geo_cordinates: {{ customer.customer_address.geo_cordinates[] }}
+customer.customer_address.landmark: {{ customer.customer_address.landmark }}
+customer.customer_address.last_name: {{ customer.customer_address.last_name }}
+customer.customer_address.phone_number: {{ customer.customer_address.phone_number }}
+customer.customer_address.point_coordinates.coordinates: {{ customer.customer_address.point_coordinates.coordinates[] }}
+customer.customer_address.point_coordinates.type: {{ customer.customer_address.point_coordinates.type }}
+customer.customer_address.state: {{ customer.customer_address.state }}
+customer.customer_address.street: {{ customer.customer_address.street }}
+customer.customer_address.zip_code: {{ customer.customer_address.zip_code }}
+customer.customer_all_addresses._id: {{ customer.customer_all_addresses[]._id }}
+customer.customer_all_addresses.city: {{ customer.customer_all_addresses[].city }}
+customer.customer_all_addresses.country: {{ customer.customer_all_addresses[].country }}
+customer.customer_all_addresses.email: {{ customer.customer_all_addresses[].email }}
+customer.customer_all_addresses.first_name: {{ customer.customer_all_addresses[].first_name }}
+customer.customer_all_addresses.geo_cordinates: {{ customer.customer_all_addresses[].geo_cordinates[] }}
+customer.customer_all_addresses.is_primary: {{ customer.customer_all_addresses[].is_primary }}
+customer.customer_all_addresses.landmark: {{ customer.customer_all_addresses[].landmark }}
+customer.customer_all_addresses.last_name: {{ customer.customer_all_addresses[].last_name }}
+customer.customer_all_addresses.phone_number: {{ customer.customer_all_addresses[].phone_number }}
+customer.customer_all_addresses.state: {{ customer.customer_all_addresses[].state }}
+customer.customer_all_addresses.street: {{ customer.customer_all_addresses[].street }}
+customer.customer_all_addresses.zip_code: {{ customer.customer_all_addresses[].zip_code }}
+customer.customer_billing_address.city: {{ customer.customer_billing_address.city }}
+customer.customer_billing_address.country: {{ customer.customer_billing_address.country }}
+customer.customer_billing_address.email: {{ customer.customer_billing_address.email }}
+customer.customer_billing_address.first_name: {{ customer.customer_billing_address.first_name }}
+customer.customer_billing_address.geo_cordinates: {{ customer.customer_billing_address.geo_cordinates[] }}
+customer.customer_billing_address.landmark: {{ customer.customer_billing_address.landmark }}
+customer.customer_billing_address.last_name: {{ customer.customer_billing_address.last_name }}
+customer.customer_billing_address.phone_number: {{ customer.customer_billing_address.phone_number }}
+customer.customer_billing_address.point_coordinates.coordinates: {{ customer.customer_billing_address.point_coordinates.coordinates[] }}
+customer.customer_billing_address.point_coordinates.type: {{ customer.customer_billing_address.point_coordinates.type }}
+customer.customer_billing_address.state: {{ customer.customer_billing_address.state }}
+customer.customer_billing_address.street: {{ customer.customer_billing_address.street }}
+customer.customer_billing_address.zip_code: {{ customer.customer_billing_address.zip_code }}
+customer.customer_category._id: {{ customer.customer_category._id }}
+customer.customer_category.category_name: {{ customer.customer_category.category_name }}
+customer.customer_category.category_uid: {{ customer.customer_category.category_uid }}
+customer.customer_company_name: {{ customer.customer_company_name }}
+customer.customer_contact_no.home: {{ customer.customer_contact_no.home }}
+customer.customer_contact_no.mobile: {{ customer.customer_contact_no.mobile }}
+customer.customer_contact_no.work: {{ customer.customer_contact_no.work }}
+customer.customer_email: {{ customer.customer_email }}
+customer.customer_first_name: {{ customer.customer_first_name }}
+customer.customer_last_name: {{ customer.customer_last_name }}
+customer.customer_organization.created_at: {{ customer.customer_organization.created_at }}
+customer.customer_organization.custom_fields: {{ customer.customer_organization.custom_fields[] }}
+customer.customer_organization.is_active: {{ customer.customer_organization.is_active }}
+customer.customer_organization.is_deleted: {{ customer.customer_organization.is_deleted }}
+customer.customer_organization.organization_address.city: {{ customer.customer_organization.organization_address.city }}
+customer.customer_organization.organization_address.country: {{ customer.customer_organization.organization_address.country }}
+customer.customer_organization.organization_address.geo_cordinates: {{ customer.customer_organization.organization_address.geo_cordinates[] }}
+customer.customer_organization.organization_address.point_coordinates.coordinates: {{ customer.customer_organization.organization_address.point_coordinates.coordinates[] }}
+customer.customer_organization.organization_address.point_coordinates.type: {{ customer.customer_organization.organization_address.point_coordinates.type }}
+customer.customer_organization.organization_address.state: {{ customer.customer_organization.organization_address.state }}
+customer.customer_organization.organization_address.street: {{ customer.customer_organization.organization_address.street }}
+customer.customer_organization.organization_address.zip_code: {{ customer.customer_organization.organization_address.zip_code }}
+customer.customer_organization.organization_name: {{ customer.customer_organization.organization_name }}
+customer.customer_organization.organization_uid: {{ customer.customer_organization.organization_uid }}
+customer.customer_organization.tax.tax_exempt: {{ customer.customer_organization.tax.tax_exempt }}
+customer.customer_organization.updated_at: {{ customer.customer_organization.updated_at }}
+customer.customer_timezone: {{ customer.customer_timezone }}
+customer.customer_uid: {{ customer.customer_uid }}
+customer.has_card_on_file: {{ customer.has_card_on_file }}
+customer.is_active: {{ customer.is_active }}
+customer.is_deleted: {{ customer.is_deleted }}
+customer.tax.tax_exempt: {{ customer.tax.tax_exempt }}
+customer.updated_at: {{ customer.updated_at }}
+customer_billing_address.city: {{ customer_billing_address.city }}
+customer_billing_address.street: {{ customer_billing_address.street }}
+customer_service_address.city: {{ customer_service_address.city }}
+customer_service_address.email: {{ customer_service_address.email }}
+customer_service_address.first_name: {{ customer_service_address.first_name }}
+customer_service_address.geo_cordinates: {{ customer_service_address.geo_cordinates[] }}
+customer_service_address.landmark: {{ customer_service_address.landmark }}
+customer_service_address.last_name: {{ customer_service_address.last_name }}
+customer_service_address.phone_number: {{ customer_service_address.phone_number }}
+customer_service_address.state: {{ customer_service_address.state }}
+customer_service_address.street: {{ customer_service_address.street }}
+customer_service_address.zip_code: {{ customer_service_address.zip_code }}
+deposit.credits: {{ deposit.credits[] }}
+deposit.is_credit_issued: {{ deposit.is_credit_issued }}
+deposit.is_void: {{ deposit.is_void }}
+deposit.payment_via: {{ deposit.payment_via }}
+discount.discount_applicability: {{ discount.discount_applicability }}
+discount.discount_fee_uid: {{ discount.discount_fee_uid }}
+discount.discount_label: {{ discount.discount_label }}
+discount.percent: {{ discount.percent }}
+discount.type: {{ discount.type }}
+discount.value: {{ discount.value }}
+estimate_date: {{ estimate_date }}
+estimate_date_dt: {{ estimate_date_dt }}
+estimate_description: {{ estimate_description }}
+estimate_no: {{ estimate_no }}
+estimate_status: {{ estimate_status }}
+estimate_uid: {{ estimate_uid }}
+expiry_date: {{ expiry_date }}
+expiry_date_dt: {{ expiry_date_dt }}
+fees: {{ fees[] }}
+financing.is_enabled: {{ financing.is_enabled }}
+financing.promo_message: {{ financing.promo_message }}
+is_active: {{ is_active }}
+is_converted: {{ is_converted }}
+is_deleted: {{ is_deleted }}
+is_expired: {{ is_expired }}
+job.created_at: {{ job.created_at }}
+job.current_job_status.status_color: {{ job.current_job_status.status_color }}
+job.current_job_status.status_name: {{ job.current_job_status.status_name }}
+job.current_job_status.status_type: {{ job.current_job_status.status_type }}
+job.current_job_status.status_uid: {{ job.current_job_status.status_uid }}
+job.custom_fields._id: {{ job.custom_fields[]._id }}
+job.custom_fields.hide_field: {{ job.custom_fields[].hide_field }}
+job.custom_fields.hide_to_fe: {{ job.custom_fields[].hide_to_fe }}
+job.custom_fields.label: {{ job.custom_fields[].label }}
+job.custom_fields.module_name: {{ job.custom_fields[].module_name }}
+job.custom_fields.read_only: {{ job.custom_fields[].read_only }}
+job.custom_fields.type: {{ job.custom_fields[].type }}
+job.custom_fields.value: {{ job.custom_fields[].value }}
+job.customer_address.city: {{ job.customer_address.city }}
+job.customer_address.country: {{ job.customer_address.country }}
+job.customer_address.email: {{ job.customer_address.email }}
+job.customer_address.first_name: {{ job.customer_address.first_name }}
+job.customer_address.geo_cordinates: {{ job.customer_address.geo_cordinates[] }}
+job.customer_address.landmark: {{ job.customer_address.landmark }}
+job.customer_address.last_name: {{ job.customer_address.last_name }}
+job.customer_address.phone_number: {{ job.customer_address.phone_number }}
+job.customer_address.point_coordinates.coordinates: {{ job.customer_address.point_coordinates.coordinates[] }}
+job.customer_address.point_coordinates.type: {{ job.customer_address.point_coordinates.type }}
+job.customer_address.state: {{ job.customer_address.state }}
+job.customer_address.street: {{ job.customer_address.street }}
+job.customer_address.zip_code: {{ job.customer_address.zip_code }}
+job.customer_billing_address.city: {{ job.customer_billing_address.city }}
+job.customer_billing_address.country: {{ job.customer_billing_address.country }}
+job.customer_billing_address.email: {{ job.customer_billing_address.email }}
+job.customer_billing_address.first_name: {{ job.customer_billing_address.first_name }}
+job.customer_billing_address.geo_cordinates: {{ job.customer_billing_address.geo_cordinates[] }}
+job.customer_billing_address.landmark: {{ job.customer_billing_address.landmark }}
+job.customer_billing_address.last_name: {{ job.customer_billing_address.last_name }}
+job.customer_billing_address.phone_number: {{ job.customer_billing_address.phone_number }}
+job.customer_billing_address.point_coordinates.coordinates: {{ job.customer_billing_address.point_coordinates.coordinates[] }}
+job.customer_billing_address.point_coordinates.type: {{ job.customer_billing_address.point_coordinates.type }}
+job.customer_billing_address.state: {{ job.customer_billing_address.state }}
+job.customer_billing_address.street: {{ job.customer_billing_address.street }}
+job.customer_billing_address.zip_code: {{ job.customer_billing_address.zip_code }}
+job.due_date: {{ job.due_date }}
+job.is_deleted: {{ job.is_deleted }}
+job.job_category.category_color: {{ job.job_category.category_color }}
+job.job_category.category_name: {{ job.job_category.category_name }}
+job.job_category.category_uid: {{ job.job_category.category_uid }}
+job.job_category.estimated_duration.days: {{ job.job_category.estimated_duration.days }}
+job.job_category.estimated_duration.hours: {{ job.job_category.estimated_duration.hours }}
+job.job_category.estimated_duration.minutes: {{ job.job_category.estimated_duration.minutes }}
+job.job_category.is_deleted: {{ job.job_category.is_deleted }}
+job.job_description: {{ job.job_description }}
+job.job_priority: {{ job.job_priority }}
+job.job_status._id: {{ job.job_status[]._id }}
+job.job_status.checklist: {{ job.job_status[].checklist[] }}
+job.job_status.created_at: {{ job.job_status[].created_at }}
+job.job_status.is_offline: {{ job.job_status[].is_offline }}
+job.job_status.status_color: {{ job.job_status[].status_color }}
+job.job_status.status_name: {{ job.job_status[].status_name }}
+job.job_status.status_type: {{ job.job_status[].status_type }}
+job.job_status.status_uid: {{ job.job_status[].status_uid }}
+job.job_status.synced_at: {{ job.job_status[].synced_at }}
+job.job_timezone: {{ job.job_timezone }}
+job.job_title: {{ job.job_title }}
+job.job_uid: {{ job.job_uid }}
+job.prefix: {{ job.prefix }}
+job.scheduled_end_time: {{ job.scheduled_end_time }}
+job.scheduled_start_time: {{ job.scheduled_start_time }}
+job.updated_at: {{ job.updated_at }}
+job.work_order_number: {{ job.work_order_number }}
+line_items._id: {{ line_items[]._id }}
+line_items.associated_products: {{ line_items[].associated_products[] }}
+line_items.brand: {{ line_items[].brand }}
+line_items.description: {{ line_items[].description }}
+line_items.discount: {{ line_items[].discount }}
+line_items.discount_type: {{ line_items[].discount_type }}
+line_items.image: {{ line_items[].image }}
+line_items.line_item_type: {{ line_items[].line_item_type }}
+line_items.line_item_uid: {{ line_items[].line_item_uid }}
+line_items.location: {{ line_items[].location }}
+line_items.location_name: {{ line_items[].location_name }}
+line_items.location_uid: {{ line_items[].location_uid }}
+line_items.markdown_description: {{ line_items[].markdown_description }}
+line_items.name: {{ line_items[].name }}
+line_items.plain_text_description: {{ line_items[].plain_text_description }}
+line_items.product_id: {{ line_items[].product_id }}
+line_items.product_ref_id.brand: {{ line_items[].product_ref_id.brand }}
+line_items.product_ref_id.created_at: {{ line_items[].product_ref_id.created_at }}
+line_items.product_ref_id.has_custom_tax: {{ line_items[].product_ref_id.has_custom_tax }}
+line_items.product_ref_id.is_deleted: {{ line_items[].product_ref_id.is_deleted }}
+line_items.product_ref_id.location_availability.location.is_deleted: {{ line_items[].product_ref_id.location_availability[].location.is_deleted }}
+line_items.product_ref_id.location_availability.location.location_name: {{ line_items[].product_ref_id.location_availability[].location.location_name }}
+line_items.product_ref_id.location_availability.location.location_uid: {{ line_items[].product_ref_id.location_availability[].location.location_uid }}
+line_items.product_ref_id.meta_data._id: {{ line_items[].product_ref_id.meta_data[]._id }}
+line_items.product_ref_id.meta_data.hide_field: {{ line_items[].product_ref_id.meta_data[].hide_field }}
+line_items.product_ref_id.meta_data.hide_to_fe: {{ line_items[].product_ref_id.meta_data[].hide_to_fe }}
+line_items.product_ref_id.meta_data.label: {{ line_items[].product_ref_id.meta_data[].label }}
+line_items.product_ref_id.meta_data.value: {{ line_items[].product_ref_id.meta_data[].value }}
+line_items.product_ref_id.price: {{ line_items[].product_ref_id.price }}
+line_items.product_ref_id.product_category.category_name: {{ line_items[].product_ref_id.product_category.category_name }}
+line_items.product_ref_id.product_category.category_uid: {{ line_items[].product_ref_id.product_category.category_uid }}
+line_items.product_ref_id.product_id: {{ line_items[].product_ref_id.product_id }}
+line_items.product_ref_id.product_name: {{ line_items[].product_ref_id.product_name }}
+line_items.product_ref_id.product_no: {{ line_items[].product_ref_id.product_no }}
+line_items.product_ref_id.product_type: {{ line_items[].product_ref_id.product_type }}
+line_items.product_ref_id.product_uid: {{ line_items[].product_ref_id.product_uid }}
+line_items.product_ref_id.purchase_price: {{ line_items[].product_ref_id.purchase_price }}
+line_items.product_ref_id.tax.entity_use_code: {{ line_items[].product_ref_id.tax.entity_use_code }}
+line_items.product_ref_id.tax.tax_exempt: {{ line_items[].product_ref_id.tax.tax_exempt }}
+line_items.product_ref_id.tax.tax_exempt_number: {{ line_items[].product_ref_id.tax.tax_exempt_number }}
+line_items.product_ref_id.tax.tax_exempt_remarks: {{ line_items[].product_ref_id.tax.tax_exempt_remarks }}
+line_items.product_ref_id.updated_at: {{ line_items[].product_ref_id.updated_at }}
+line_items.product_type: {{ line_items[].product_type }}
+line_items.product_uid: {{ line_items[].product_uid }}
+line_items.purchase_price: {{ line_items[].purchase_price }}
+line_items.quantity: {{ line_items[].quantity }}
+line_items.serial_nos: {{ line_items[].serial_nos[] }}
+line_items.specification: {{ line_items[].specification }}
+line_items.tax.tax_exempt: {{ line_items[].tax.tax_exempt }}
+line_items.taxes: {{ line_items[].taxes[] }}
+line_items.total: {{ line_items[].total }}
+line_items.unit_price: {{ line_items[].unit_price }}
+markdown_description: {{ markdown_description }}
+notes: {{ notes[] }}
+organization.created_at: {{ organization.created_at }}
+organization.custom_fields: {{ organization.custom_fields[] }}
+organization.is_active: {{ organization.is_active }}
+organization.is_deleted: {{ organization.is_deleted }}
+organization.no_of_customers: {{ organization.no_of_customers }}
+organization.organization_address.city: {{ organization.organization_address.city }}
+organization.organization_address.country: {{ organization.organization_address.country }}
+organization.organization_address.geo_cordinates: {{ organization.organization_address.geo_cordinates[] }}
+organization.organization_address.point_coordinates.coordinates: {{ organization.organization_address.point_coordinates.coordinates[] }}
+organization.organization_address.point_coordinates.type: {{ organization.organization_address.point_coordinates.type }}
+organization.organization_address.state: {{ organization.organization_address.state }}
+organization.organization_address.street: {{ organization.organization_address.street }}
+organization.organization_address.zip_code: {{ organization.organization_address.zip_code }}
+organization.organization_name: {{ organization.organization_name }}
+organization.organization_uid: {{ organization.organization_uid }}
+organization.tax.tax_exempt: {{ organization.tax.tax_exempt }}
+organization.updated_at: {{ organization.updated_at }}
+plain_text_description: {{ plain_text_description }}
+prefix: {{ prefix }}
+project.project_category.category_name: {{ project.project_category.category_name }}
+project.project_current_status.project_status_color: {{ project.project_current_status.project_status_color }}
+project.project_current_status.project_status_name: {{ project.project_current_status.project_status_name }}
+project.project_current_status.project_status_type: {{ project.project_current_status.project_status_type }}
+project.project_current_status.project_status_uid: {{ project.project_current_status.project_status_uid }}
+project.project_due_date: {{ project.project_due_date }}
+project.project_name: {{ project.project_name }}
+project.project_number: {{ project.project_number }}
+project.project_priority: {{ project.project_priority }}
+project.project_uid: {{ project.project_uid }}
+property: {{ property }}
+proposal_options: {{ proposal_options[] }}
+proposal_title: {{ proposal_title }}
+public_url: {{ public_url }}
+reference_no: {{ reference_no }}
+remarks: {{ remarks }}
+request: {{ request }}
+secondary_customers: {{ secondary_customers[] }}
+service_contract: {{ service_contract }}
+status_history._id: {{ status_history[]._id }}
+status_history.attachments: {{ status_history[].attachments[] }}
+status_history.created_at: {{ status_history[].created_at }}
+status_history.done_by.created_at: {{ status_history[].done_by.created_at }}
+status_history.done_by.designation: {{ status_history[].done_by.designation }}
+status_history.done_by.email: {{ status_history[].done_by.email }}
+status_history.done_by.emp_code: {{ status_history[].done_by.emp_code }}
+status_history.done_by.external_login_id: {{ status_history[].done_by.external_login_id }}
+status_history.done_by.first_name: {{ status_history[].done_by.first_name }}
+status_history.done_by.home_phone_number: {{ status_history[].done_by.home_phone_number }}
+status_history.done_by.hourly_labor_charge: {{ status_history[].done_by.hourly_labor_charge }}
+status_history.done_by.is_active: {{ status_history[].done_by.is_active }}
+status_history.done_by.is_deleted: {{ status_history[].done_by.is_deleted }}
+status_history.done_by.last_name: {{ status_history[].done_by.last_name }}
+status_history.done_by.mobile_phone_number: {{ status_history[].done_by.mobile_phone_number }}
+status_history.done_by.prefix: {{ status_history[].done_by.prefix }}
+status_history.done_by.profile_picture: {{ status_history[].done_by.profile_picture }}
+status_history.done_by.updated_at: {{ status_history[].done_by.updated_at }}
+status_history.done_by.user_uid: {{ status_history[].done_by.user_uid }}
+status_history.done_by.work_phone_number: {{ status_history[].done_by.work_phone_number }}
+status_history.done_by_type: {{ status_history[].done_by_type }}
+status_history.line_items_status: {{ status_history[].line_items_status[] }}
+status_history.status_name: {{ status_history[].status_name }}
+sub_total: {{ sub_total }}
+tags: {{ tags[] }}
+tax._id: {{ tax[]._id }}
+tax.tax_amount: {{ tax[].tax_amount }}
+tax.tax_id.applicable_to: {{ tax[].tax_id.applicable_to[] }}
+tax.tax_id.is_active: {{ tax[].tax_id.is_active }}
+tax.tax_id.is_local_tax: {{ tax[].tax_id.is_local_tax }}
+tax.tax_id.tax_applicable_to: {{ tax[].tax_id.tax_applicable_to[] }}
+tax.tax_id.tax_name: {{ tax[].tax_id.tax_name }}
+tax.tax_id.tax_rate: {{ tax[].tax_id.tax_rate }}
+tax.tax_id.tax_uid: {{ tax[].tax_id.tax_uid }}
+tax.tax_name: {{ tax[].tax_name }}
+tax.tax_percent: {{ tax[].tax_percent }}
+tax.tax_uid: {{ tax[].tax_uid }}
+tax_exempt: {{ tax_exempt }}
+taxation_meta.status_history: {{ taxation_meta.status_history[] }}
+taxation_meta.tax_provider: {{ taxation_meta.tax_provider }}
+template.is_deleted: {{ template.is_deleted }}
+template.render_engine: {{ template.render_engine }}
+template.template: {{ template.template }}
+template.template_description: {{ template.template_description }}
+template.template_name: {{ template.template_name }}
+template.template_options.border.bottom: {{ template.template_options.border.bottom }}
+template.template_options.border.left: {{ template.template_options.border.left }}
+template.template_options.border.right: {{ template.template_options.border.right }}
+template.template_options.border.top: {{ template.template_options.border.top }}
+template.template_options.format: {{ template.template_options.format }}
+template.template_options.orientation: {{ template.template_options.orientation }}
+template.template_uid: {{ template.template_uid }}
+template.type: {{ template.type }}
+total: {{ total }}
+total_discount: {{ total_discount }}
+total_markup: {{ total_markup }}
+updated_at: {{ updated_at }}
+
+Estimate No: {{ estimate_no }}
+Estimate Date: {{formatDateWithTimeZone estimate_date 'MM/DD/YYYY' timezone}}
+
+Work Location:
+{{ customer.customer_first_name }} {{ customer.customer_last_name }}
+{{ customer_service_address.street }}
+{{ customer_service_address.city }}, {{ customer_service_address.state }} {{ customer_service_address.zip_code }}
+
+Contact Information:
+{{ customer.customer_first_name }} {{ customer.customer_last_name }}
+{{ customer.customer_contact_no.mobile }}
+{{ customer.customer_email }}
+
+Sales Representative:
+{{#each custom_fields}}
+  {{#if group_name}}
+  {{else}}
+    {{#stringEqStrict label 'FE Name' }}
+      {{value}}
+    {{/stringEqStrict}}
+  {{/if}}
+{{/each}}
+
+{{#each custom_fields}}
+  {{#if group_name}}
+  {{else}}
+    {{#stringEqStrict label 'FE Email' }}
+      {{value}}
+    {{/stringEqStrict}}
+  {{/if}}
+{{/each}}
+
+{{#each custom_fields}}
+  {{#if group_name}}
+  {{else}}
+    {{#stringEqStrict label 'FE Mobile number' }}
+      {{value}}
+    {{/stringEqStrict}}
+  {{/if}}
+{{/each}}
+
+Line Items:
+{{#each line_items}}
+  {{#if description}}
+    {{#split description '\n'}}
+      {{.}}
+    {{/split}}
+  {{/if}}
+  {{unit_price}}
+  {{quantity}}
+  {{total}}
+{{/each}}
+
+Subtotal: {{ sub_total }}
+Tax: {{ tax_name }}({{ tax_percent }}%) - {{ tax_amount }}
+Total: {{ total }}
+
+Notes:
+{{#each custom_fields}}
+  {{#if group_name}}
+  {{else}}
+    {{#stringEqStrict label 'Notes:' }}
+      {{value}}
+    {{/stringEqStrict}}
+  {{/if}}
+{{/each}}
+
+Custom Field Notes (Asphalt Patch, Caulking, etc.):
+{{#each custom_fields}}
+  {{#if group_name}}
+  {{else}}
+    {{#stringEqStrict label 'Asphalt Patch' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Caulking' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Cleaning and Sealing' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Downspout and Gutters' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Gutters' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Hairline Breaks Present' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Handrail' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Holes' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Late Paperwork Requests' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Pavers' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Pools' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Prior Patching/Caulking' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Puddling and Water Issues' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Review Links' }}
+      {{value}}
+    {{/stringEqStrict}}
+    {{#stringEqStrict label 'Sliding Slabs' }}
+      {{value}}
+    {{/stringEqStrict}}
+  {{/if}}
+{{/each}}
+
+Photos Before:
+{{#if job}}
+  {{#eachLastInstance job.job_status "status_name"}}
+    {{#stringEq status_name 'Photo and Data Collection'}}
+      {{#each checklist}}
+        {{#stringEqStrict question 'Before Photos'}}
+          {{#if answer}}
+            {{#split answer ','}}
+              {{.}}
+            {{/split}}
+          {{/if}}
+        {{/stringEqStrict}}
+      {{/each}}
+    {{/stringEq}}
+  {{/eachLastInstance}}
+{{/if}}
+
+Drawings:
+{{#if job}}
+  {{#eachLastInstance job.job_status "status_name"}}
+    {{#stringEq status_name 'Photo and Data Collection'}}
+      {{#each checklist}}
+        {{#stringEqStrict question 'Drawings'}}
+          {{#if answer}}
+            {{#split answer ','}}
+              {{.}}
+            {{/split}}
+          {{/if}}
+        {{/stringEqStrict}}
+      {{/each}}
+    {{/stringEq}}
+  {{/eachLastInstance}}
+{{/if}}
+
+Company Information:
+{{ company.company_name }}
+{{#split company.company_address ','}}
+  {{.}}
+{{/split}}
+{{ company.company_phone }}
+{{ company.company_email }}
+www.A1Concrete.com
+
+{{#each custom_fields}}
+  {{#unless group_name}}
+    {{#stringEqStrict label 'FE Name'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'FE Email'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'FE Mobile number'}}{{value}}{{/stringEqStrict}}
+  {{/unless}}
+{{/each}}
+
+{{#each custom_fields}}
+  {{#unless group_name}}
+    {{#stringEqStrict label 'Notes:'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Asphalt Patch'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Caulking'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Cleaning and Sealing'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Downspout and Gutters'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Gutters'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Hairline Breaks Present'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Handrail'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Holes'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Late Paperwork Requests'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Pavers'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Pools'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Prior Patching/Caulking'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Puddling and Water Issues'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Review Links'}}{{value}}{{/stringEqStrict}}
+    {{#stringEqStrict label 'Sliding Slabs'}}{{value}}{{/stringEqStrict}}
+  {{/unless}}
+{{/each}}
+
+{{#if job}}
+  {{#eachLastInstance job.job_status "status_name"}}
+    {{#stringEq status_name 'Photo and Data Collection'}}
+      {{#each checklist}}
+        {{#stringEqStrict question 'Before Photos'}}
+          {{#if answer}}{{#split answer ','}}{{.}}{{/split}}{{/if}}
+        {{/stringEqStrict}}
+        {{#stringEqStrict question 'Drawings'}}
+          {{#if answer}}{{#split answer ','}}{{.}}{{/split}}{{/if}}
+        {{/stringEqStrict}}
+      {{/each}}
+    {{/stringEq}}
+  {{/eachLastInstance}}
+{{/if}}
+
+{{#each custom_fields}}
+  {{#if group_name}}
+    {{!-- Grouped custom fields would be processed here --}}
+  {{/if}}
+{{/each}}
+
+{{#if organization}}
+  {{ organization.organization_name }}
+  {{#if organization.organization_address.street}}
+    {{organization.organization_address.street}}
+    {{#if organization.organization_address.city}}{{organization.organization_address.city}}{{/if}}
+    {{organization.organization_address.state}} 
+    {{#if organization.organization_address.zip_code}}{{organization.organization_address.zip_code}}{{/if}}
+  {{/if}}
+{{/if}}
+
+{{formatCurrency amount "en-US" "USD"}}  <!-- Multiple instances with different variables -->
+
+{{replace someString "find" "replace"}}  <!-- Generic replacement helper -->
+
+{{#if condition}}...{{/if}}
+{{#unless condition}}...{{/unless}}
+{{#stringEqStrict}}...{{/stringEqStrict}}  <!-- Custom string comparison helper -->
+
+{{#each items}}...{{/each}}
+{{#eachLastInstance array property value}}...{{/eachLastInstance}}  <!-- Custom iteration helper -->
+
+
+{{#split string delimiter}}...{{/split}}  <!-- Custom string splitting helper -->
+
+Page Footer:
+{{replace "{{page}}" "H" "V"}} of {{replace "{{pages}}" "H" "V"}}
+R&R Leveling, LLC, an Indiana Limited Liability Company, A 1 Concrete Leveling,
+{{company.company_address}} an independently owned and operated franchise of A 1 Concrete Leveling, Inc.

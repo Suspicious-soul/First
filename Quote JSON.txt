@@ -1,0 +1,1350 @@
+{
+    "type": "success",
+    "data": {
+        "estimate_uid": "2de70f67-90b2-4457-896a-5f574bcd5ba8",
+        "prefix": "",
+        "reference_no": "",
+        "estimate_description": "",
+        "plain_text_description": "",
+        "markdown_description": "",
+        "estimate_date": "2025-06-17T18:30:00.000Z",
+        "estimate_date_dt": "2025-06-18",
+        "expiry_date": "2025-06-18T18:29:00.000Z",
+        "expiry_date_dt": "2025-06-18",
+        "project": {
+            "project_uid": "328c3565-f2d6-494a-bf3c-a62f27e2b615",
+            "project_name": "Test Project",
+            "project_category": {
+                "category_name": "Ortho"
+            },
+            "project_priority": "LOW",
+            "project_current_status": {
+                "project_status_uid": "ebe0ba94-37a0-4cea-8fd8-1c9be248da33",
+                "project_status_name": "New",
+                "project_status_type": "NEW",
+                "project_status_color": "#02B875"
+            },
+            "project_due_date": "2025-05-23T18:29:59.000Z",
+            "project_number": 1
+        },
+        "customer": {
+            "customer_uid": "57eb9ec8-7f86-4ff2-af3b-119740db89ad",
+            "customer_first_name": "Test Template",
+            "customer_last_name": "Customer",
+            "customer_category": {
+                "_id": "66d9f7b155fae8af742d3f10",
+                "category_uid": "b94c4d8a-7fc5-47c3-821b-ca67353758f4",
+                "category_name": "VIP"
+            },
+            "customer_organization": {
+                "organization_uid": "953c084d-824c-4d15-95ea-8ababeab3526",
+                "organization_name": "Customer Org 1",
+                "organization_address": {
+                    "city": "city",
+                    "state": "state",
+                    "street": "street",
+                    "country": "country",
+                    "zip_code": "zipcode",
+                    "geo_cordinates": [
+                        11.21,
+                        81.91
+                    ],
+                    "point_coordinates": {
+                        "type": "Point",
+                        "coordinates": [
+                            81.91,
+                            11.21
+                        ]
+                    }
+                },
+                "custom_fields": [],
+                "tax": {
+                    "tax_exempt": false
+                },
+                "is_active": true,
+                "is_deleted": false,
+                "created_at": "2024-07-10T16:59:31.736Z",
+                "updated_at": "2024-07-10T16:59:31.737Z"
+            },
+            "customer_company_name": "",
+            "customer_email": "TestTemplate@123.com",
+            "customer_contact_no": {
+                "mobile": "1233",
+                "home": "1233",
+                "work": "1233"
+            },
+            "customer_all_addresses": [
+                {
+                    "first_name": null,
+                    "last_name": null,
+                    "phone_number": null,
+                    "email": null,
+                    "city": "Toronto",
+                    "state": "Ontario",
+                    "street": "123 Queen Street West",
+                    "country": "Canada",
+                    "landmark": null,
+                    "zip_code": "M5H 3M9",
+                    "geo_cordinates": [
+                        43.6511644,
+                        -79.3841716
+                    ],
+                    "is_primary": false,
+                    "_id": "68528e5b413df4d2f5200fb7"
+                }
+            ],
+            "customer_address": {
+                "city": "Toronto",
+                "state": "Ontario",
+                "street": "123 Queen Street West",
+                "country": "Canada",
+                "landmark": null,
+                "zip_code": "M5H 3M9",
+                "first_name": null,
+                "last_name": null,
+                "phone_number": null,
+                "email": null,
+                "geo_cordinates": [
+                    43.6511644,
+                    -79.3841716
+                ],
+                "point_coordinates": {
+                    "type": "Point",
+                    "coordinates": [
+                        -79.3841716,
+                        43.6511644
+                    ]
+                }
+            },
+            "customer_billing_address": {
+                "city": "Toronto",
+                "state": "Ontario",
+                "street": "123 Queen Street West",
+                "country": "Canada",
+                "landmark": null,
+                "zip_code": "M5H 3M9",
+                "first_name": null,
+                "last_name": null,
+                "phone_number": null,
+                "email": null,
+                "geo_cordinates": [
+                    43.6511644,
+                    -79.3841716
+                ],
+                "point_coordinates": {
+                    "type": "Point",
+                    "coordinates": [
+                        -79.3841716,
+                        43.6511644
+                    ]
+                }
+            },
+            "custom_fields": [
+                {
+                    "label": "Customer Contact Type",
+                    "value": "VIP Type",
+                    "type": "SINGLE_LINE",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "68528e5b413df4d2f5200fb8"
+                },
+                {
+                    "label": "Contact Type",
+                    "value": "Non VIP",
+                    "type": "SINGLE_ITEM",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "68528e5b413df4d2f5200fb9"
+                }
+            ],
+            "accounts": {
+                "tax": {
+                    "tax_exempt": false
+                },
+                "ltv": 0,
+                "receivables": 0,
+                "credits": 0
+            },
+            "is_active": true,
+            "is_deleted": false,
+            "has_card_on_file": false,
+            "tax": {
+                "tax_exempt": false
+            },
+            "customer_timezone": "Pacific/Niue",
+            "created_at": "2025-06-18T10:00:59.641Z",
+            "updated_at": "2025-06-18T10:00:59.643Z"
+        },
+        "organization": {
+            "organization_uid": "953c084d-824c-4d15-95ea-8ababeab3526",
+            "organization_name": "Customer Org 1",
+            "no_of_customers": 1,
+            "organization_address": {
+                "city": "city",
+                "state": "state",
+                "street": "street",
+                "country": "country",
+                "zip_code": "zipcode",
+                "geo_cordinates": [
+                    11.21,
+                    81.91
+                ],
+                "point_coordinates": {
+                    "type": "Point",
+                    "coordinates": [
+                        81.91,
+                        11.21
+                    ]
+                }
+            },
+            "custom_fields": [],
+            "tax": {
+                "tax_exempt": false
+            },
+            "is_active": true,
+            "is_deleted": false,
+            "created_at": "2024-07-10T16:59:31.736Z",
+            "updated_at": "2024-07-10T16:59:31.737Z"
+        },
+        "property": null,
+        "request": null,
+        "customer_billing_address": {
+            "city": "Chennai",
+            "street": "WorkEZ SM Towers OMR - Managed Offices and Coworking Spaces, Seevaram, Perungudi"
+        },
+        "customer_service_address": {
+            "landmark": null,
+            "city": "Toronto",
+            "state": "Ontario",
+            "street": "123 Queen Street West",
+            "zip_code": "M5H 3M9",
+            "geo_cordinates": [
+                43.6511644,
+                -79.3841716
+            ],
+            "first_name": "Test Template",
+            "last_name": "Customer",
+            "phone_number": "1233",
+            "email": "TestTemplate@123.com"
+        },
+        "job": {
+            "job_uid": "9ac7beb6-709b-4545-87fb-1633a7880069",
+            "prefix": "",
+            "job_title": "test Scheduled Start Date to invoice",
+            "job_description": "<span style=\"color: rgb(29, 28, 29); font-family: Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px; font-variant-ligatures: common-ligatures; background-color: rgb(248, 248, 248);\">Maintenance of the product</span>",
+            "job_category": {
+                "category_uid": "96a7cb36-171b-477d-a4da-78d14e98f683",
+                "category_name": "Maintenance",
+                "category_color": "#000",
+                "estimated_duration": {
+                    "days": 2,
+                    "hours": 12,
+                    "minutes": 0
+                },
+                "is_deleted": false
+            },
+            "job_priority": "LOW",
+            "scheduled_start_time": "2025-05-22T22:30:00.000Z",
+            "scheduled_end_time": "2025-05-25T10:30:00.000Z",
+            "due_date": "2025-05-31T18:29:59.000Z",
+            "current_job_status": {
+                "status_uid": "de413675-b039-4d32-a3e5-a511b056fefb",
+                "status_name": "New",
+                "status_type": "NEW",
+                "status_color": "#e74c3c"
+            },
+            "job_status": [
+                {
+                    "status_uid": "de413675-b039-4d32-a3e5-a511b056fefb",
+                    "status_name": "New",
+                    "status_type": "NEW",
+                    "status_color": "#e74c3c",
+                    "is_offline": false,
+                    "_id": "682cf912eed4745ab16dd61b",
+                    "checklist": [],
+                    "created_at": "2025-05-20T21:50:10.946Z",
+                    "synced_at": "2025-05-20T21:50:10.946Z"
+                }
+            ],
+            "customer_address": {
+                "landmark": "",
+                "city": "Worksop",
+                "state": "England",
+                "street": "Worksop, UK",
+                "country": "United Kingdom",
+                "zip_code": "",
+                "first_name": "API Customer",
+                "last_name": "",
+                "phone_number": "",
+                "email": "API@zuper.co",
+                "geo_cordinates": [
+                    53.309302,
+                    -1.122745
+                ],
+                "point_coordinates": {
+                    "type": "Point",
+                    "coordinates": [
+                        -1.122745,
+                        53.309302
+                    ]
+                }
+            },
+            "customer_billing_address": {
+                "landmark": "",
+                "city": "Worksop",
+                "state": "England",
+                "street": "Worksop, UK",
+                "country": "United Kingdom",
+                "zip_code": "",
+                "first_name": "API Customer",
+                "last_name": "",
+                "phone_number": "",
+                "email": "API@zuper.co",
+                "geo_cordinates": [
+                    53.309302,
+                    -1.122745
+                ],
+                "point_coordinates": {
+                    "type": "Point",
+                    "coordinates": [
+                        -1.122745,
+                        53.309302
+                    ]
+                }
+            },
+            "custom_fields": [
+                {
+                    "label": "variety",
+                    "value": "",
+                    "type": "SINGLE_LINE",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd61c"
+                },
+                {
+                    "label": "Customer Contact Type",
+                    "value": "Test Customer Contact Type",
+                    "type": "SINGLE_LINE",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd61d"
+                },
+                {
+                    "label": "Customer VIP/Non-VIP",
+                    "value": "",
+                    "type": "SINGLE_ITEM",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd61e"
+                },
+                {
+                    "label": "Scheduled Start Date",
+                    "value": "",
+                    "type": "DATETIME",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd61f"
+                },
+                {
+                    "label": "Scheduled End Date",
+                    "value": "",
+                    "type": "DATETIME",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd620"
+                },
+                {
+                    "label": "Attachment Done",
+                    "value": "",
+                    "type": "RADIO",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd621"
+                },
+                {
+                    "label": "Issue Type",
+                    "value": "",
+                    "type": "SINGLE_ITEM",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd622"
+                },
+                {
+                    "label": "Test",
+                    "value": "",
+                    "type": "RADIO",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd623"
+                },
+                {
+                    "label": "PO",
+                    "value": "",
+                    "type": "SINGLE_LINE",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": false,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd624"
+                },
+                {
+                    "label": "Job Notes",
+                    "value": "",
+                    "type": "MULTI_LINE",
+                    "module_name": "PRODUCT",
+                    "hide_to_fe": false,
+                    "hide_field": true,
+                    "read_only": false,
+                    "_id": "682cf912eed4745ab16dd625"
+                }
+            ],
+            "is_deleted": false,
+            "job_timezone": "Asia/Kolkata",
+            "created_at": "2025-05-20T21:50:10.949Z",
+            "updated_at": "2025-06-17T11:15:28.740Z",
+            "work_order_number": 341
+        },
+        "line_items": [
+            {
+                "line_item_uid": "8da72b40-1a38-459c-8d26-04c515d84b1f",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "c124e128-c071-4904-a49f-36628baed4e1",
+                    "product_id": "COM01",
+                    "product_category": {
+                        "category_uid": "5a739a42-0da6-4bb2-91e5-d8bf295e02c1",
+                        "category_name": "Parts"
+                    },
+                    "brand": "Godrej",
+                    "product_name": "Compressor",
+                    "product_type": "PARTS",
+                    "meta_data": [
+                        {
+                            "label": "QB Product ID",
+                            "value": "31",
+                            "hide_field": false,
+                            "hide_to_fe": false,
+                            "_id": "66c77a86dfd8af43b20bbd59"
+                        }
+                    ],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 50,
+                    "purchase_price": 20,
+                    "has_custom_tax": false,
+                    "tax": {
+                        "tax_exempt": false,
+                        "tax_exempt_remarks": null,
+                        "tax_exempt_number": null,
+                        "entity_use_code": null
+                    },
+                    "is_deleted": false,
+                    "created_at": "2024-07-10T19:10:25.187Z",
+                    "updated_at": "2025-05-23T12:57:15.300Z",
+                    "product_no": 1
+                },
+                "location": "66881fde552aa0cfe2b49e24",
+                "product_id": "COM01",
+                "product_uid": "c124e128-c071-4904-a49f-36628baed4e1",
+                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                "location_name": "Work Ez",
+                "image": "",
+                "name": "Compressor",
+                "brand": "Godrej",
+                "specification": "",
+                "description": "",
+                "markdown_description": "",
+                "plain_text_description": "",
+                "product_type": "PARTS",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 50,
+                "discount": 0,
+                "purchase_price": 20,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 50,
+                "tax": {
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb103",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "2e6cd7f7-71ef-41bb-a700-989eb8e564e7",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "c124e128-c071-4904-a49f-36628baed4e1",
+                    "product_id": "COM01",
+                    "product_category": {
+                        "category_uid": "5a739a42-0da6-4bb2-91e5-d8bf295e02c1",
+                        "category_name": "Parts"
+                    },
+                    "brand": "Godrej",
+                    "product_name": "Compressor",
+                    "product_type": "PARTS",
+                    "meta_data": [
+                        {
+                            "label": "QB Product ID",
+                            "value": "31",
+                            "hide_field": false,
+                            "hide_to_fe": false,
+                            "_id": "66c77a86dfd8af43b20bbd59"
+                        }
+                    ],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 50,
+                    "purchase_price": 20,
+                    "has_custom_tax": false,
+                    "tax": {
+                        "tax_exempt": false,
+                        "tax_exempt_remarks": null,
+                        "tax_exempt_number": null,
+                        "entity_use_code": null
+                    },
+                    "is_deleted": false,
+                    "created_at": "2024-07-10T19:10:25.187Z",
+                    "updated_at": "2025-05-23T12:57:15.300Z",
+                    "product_no": 1
+                },
+                "location": "66881fde552aa0cfe2b49e24",
+                "product_id": "COM01",
+                "product_uid": "c124e128-c071-4904-a49f-36628baed4e1",
+                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                "location_name": "Work Ez",
+                "image": "",
+                "name": "Compressor",
+                "brand": "Godrej",
+                "specification": "",
+                "description": "",
+                "markdown_description": "",
+                "plain_text_description": "",
+                "product_type": "PARTS",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 50,
+                "discount": 0,
+                "purchase_price": 20,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 50,
+                "tax": {
+                    "tax_exempt": false,
+                    "tax_exempt_remarks": null,
+                    "tax_exempt_number": null,
+                    "entity_use_code": null
+                },
+                "_id": "68528e766228e1b24d4fb104",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "47e4426f-f27c-4214-8493-fac1fd25700c",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "92a43b7d-c52d-4718-82dd-ad7eb7007435",
+                    "prefix": "",
+                    "product_id": "S001",
+                    "product_category": {
+                        "category_uid": "e76ac623-3322-4b65-ae59-bcad95c7b9b0",
+                        "category_name": "Service"
+                    },
+                    "brand": "",
+                    "specification": "",
+                    "product_name": "Service - Maintenance",
+                    "product_type": "SERVICE",
+                    "meta_data": [],
+                    "location_availability": [],
+                    "price": 100,
+                    "purchase_price": null,
+                    "has_custom_tax": false,
+                    "tax": {
+                        "tax_exempt": false
+                    },
+                    "is_billable": true,
+                    "is_deleted": false,
+                    "created_at": "2025-01-23T17:43:20.263Z",
+                    "updated_at": "2025-01-23T17:43:20.264Z",
+                    "product_no": 2
+                },
+                "product_id": "S001",
+                "product_uid": "92a43b7d-c52d-4718-82dd-ad7eb7007435",
+                "location_uid": "",
+                "image": "",
+                "name": "Service - Maintenance",
+                "brand": "",
+                "specification": "",
+                "description": "",
+                "markdown_description": "",
+                "plain_text_description": "",
+                "uom": "",
+                "product_type": "SERVICE",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 100,
+                "discount": 0,
+                "purchase_price": 100,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 100,
+                "tax": {
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb105",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "9c50045d-0288-40c4-94aa-910d0d149119",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "dc955e71-0eef-417c-8213-aa63883e607f",
+                    "prefix": "",
+                    "product_id": "Portable Connect PC1",
+                    "product_category": {
+                        "category_uid": "774cb588-caf7-4aec-a999-f042f6d68fc7",
+                        "category_name": "Product"
+                    },
+                    "brand": "",
+                    "specification": "",
+                    "product_name": "Portable Connect",
+                    "product_type": "PRODUCT",
+                    "meta_data": [],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 90,
+                    "purchase_price": null,
+                    "has_custom_tax": false,
+                    "tax": {
+                        "tax_exempt": false
+                    },
+                    "is_billable": true,
+                    "is_deleted": false,
+                    "created_at": "2025-04-04T13:11:58.649Z",
+                    "updated_at": "2025-05-23T12:57:17.824Z",
+                    "product_no": 3
+                },
+                "location": "66881fde552aa0cfe2b49e24",
+                "product_id": "Portable Connect PC1",
+                "product_uid": "dc955e71-0eef-417c-8213-aa63883e607f",
+                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                "location_name": "Work Ez",
+                "image": "",
+                "name": "Portable Connect",
+                "brand": "",
+                "specification": "",
+                "description": "",
+                "markdown_description": "",
+                "plain_text_description": "",
+                "uom": "",
+                "product_type": "PRODUCT",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 90,
+                "discount": 0,
+                "purchase_price": 90,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 90,
+                "tax": {
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb106",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "696d057a-7193-42e7-9f9d-0df30c0332f4",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "20172280-6e87-4e89-a6f1-221aa29f7089",
+                    "product_id": "987987987",
+                    "product_category": {
+                        "category_uid": "5a739a42-0da6-4bb2-91e5-d8bf295e02c1",
+                        "category_name": "Parts"
+                    },
+                    "brand": "Godrej",
+                    "specification": "",
+                    "product_name": "Compressor - test Serial Number",
+                    "product_type": "PARTS",
+                    "meta_data": [
+                        {
+                            "label": "QB Product ID",
+                            "value": "31",
+                            "hide_field": false,
+                            "hide_to_fe": false,
+                            "_id": "66c77a86dfd8af43b20bbd59"
+                        }
+                    ],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        },
+                        {
+                            "location": {
+                                "location_uid": "7f7182a7-5ca9-4b78-bd18-e8474fbaa1a4",
+                                "location_name": "D-TX-San Antonio-Valr",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 50,
+                    "purchase_price": 20,
+                    "has_custom_tax": false,
+                    "tax": {
+                        "tax_exempt": false
+                    },
+                    "is_billable": true,
+                    "is_deleted": false,
+                    "created_at": "2025-05-03T18:59:11.646Z",
+                    "updated_at": "2025-05-03T19:04:32.363Z",
+                    "product_no": 4
+                },
+                "location": "66881fde552aa0cfe2b49e24",
+                "product_id": "987987987",
+                "product_uid": "20172280-6e87-4e89-a6f1-221aa29f7089",
+                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                "location_name": "Work Ez",
+                "image": "",
+                "name": "Compressor - test Serial Number",
+                "brand": "Godrej",
+                "specification": "",
+                "description": "",
+                "markdown_description": "",
+                "plain_text_description": "",
+                "uom": "",
+                "product_type": "PARTS",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 50,
+                "discount": 0,
+                "purchase_price": 20,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 50,
+                "tax": {
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb107",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "1eb7135e-9294-4e42-8eaf-f4c855747682",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "0e665cbd-cca8-4451-8608-45885ff32f19",
+                    "product_id": "6075370",
+                    "product_category": {
+                        "category_uid": "5a739a42-0da6-4bb2-91e5-d8bf295e02c1",
+                        "category_name": "Parts"
+                    },
+                    "brand": "dolorum",
+                    "specification": "Rerum illo enim vero voluptate ea consequatur delectus molestiae.",
+                    "product_name": "quidem",
+                    "product_type": "PARTS",
+                    "meta_data": [],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 4902,
+                    "purchase_price": 87622,
+                    "has_custom_tax": false,
+                    "is_deleted": false,
+                    "created_at": "2025-05-19T10:30:15.209Z",
+                    "updated_at": "2025-05-19T10:30:15.214Z",
+                    "product_no": 5
+                },
+                "location": "66881fde552aa0cfe2b49e24",
+                "product_id": "6075370",
+                "product_uid": "0e665cbd-cca8-4451-8608-45885ff32f19",
+                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                "location_name": "Work Ez",
+                "image": "",
+                "name": "quidem",
+                "brand": "dolorum",
+                "specification": "Rerum illo enim vero voluptate ea consequatur delectus molestiae.",
+                "description": "Eligendi repudiandae occaecati totam consequatur numquam molestiae in.",
+                "markdown_description": "Eligendi repudiandae occaecati totam consequatur numquam molestiae in.",
+                "plain_text_description": "Eligendi repudiandae occaecati totam consequatur numquam molestiae in.",
+                "uom": "units",
+                "product_type": "PARTS",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 4902,
+                "discount": 0,
+                "purchase_price": 87622,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 4902,
+                "tax": {
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb108",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "31adab19-cb7c-42a5-9b67-f1e80342ea79",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "95ecd7b8-d073-43d6-b54c-37ee04d892a8",
+                    "product_id": "16984538",
+                    "product_category": {
+                        "category_uid": "774cb588-caf7-4aec-a999-f042f6d68fc7",
+                        "category_name": "Product"
+                    },
+                    "brand": "fuga",
+                    "specification": "A reiciendis eum velit velit distinctio dolore quas.",
+                    "product_name": "laudantium",
+                    "product_type": "PARTS",
+                    "meta_data": [],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 79920,
+                    "purchase_price": 10346,
+                    "has_custom_tax": false,
+                    "is_deleted": false,
+                    "created_at": "2025-05-19T10:30:15.268Z",
+                    "updated_at": "2025-05-19T10:30:15.273Z",
+                    "product_no": 6
+                },
+                "location": "66881fde552aa0cfe2b49e24",
+                "product_id": "16984538",
+                "product_uid": "95ecd7b8-d073-43d6-b54c-37ee04d892a8",
+                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                "location_name": "Work Ez",
+                "image": "",
+                "name": "laudantium",
+                "brand": "fuga",
+                "specification": "A reiciendis eum velit velit distinctio dolore quas.",
+                "description": "Omnis soluta iure esse sit sapiente.",
+                "markdown_description": "Omnis soluta iure esse sit sapiente.",
+                "plain_text_description": "Omnis soluta iure esse sit sapiente.",
+                "uom": "cm",
+                "product_type": "PARTS",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 79920,
+                "discount": 0,
+                "purchase_price": 10346,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 79920,
+                "tax": {
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb109",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "a5e61995-f6aa-4ad2-8947-820e21724909",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "dacc5778-26a8-4f64-9a0e-e6209c07ef61",
+                    "product_id": "60753069",
+                    "product_category": {
+                        "category_uid": "5a739a42-0da6-4bb2-91e5-d8bf295e02c1",
+                        "category_name": "Parts"
+                    },
+                    "brand": "dolorum",
+                    "specification": "Rerum illo enim vero voluptate ea consequatur delectus molestiae.",
+                    "product_name": "quidem",
+                    "product_type": "PARTS",
+                    "meta_data": [],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 4902,
+                    "purchase_price": 87622,
+                    "has_custom_tax": false,
+                    "is_deleted": false,
+                    "created_at": "2025-05-19T10:30:15.309Z",
+                    "updated_at": "2025-05-19T10:30:15.311Z",
+                    "product_no": 7
+                },
+                "location": "66881fde552aa0cfe2b49e24",
+                "product_id": "60753069",
+                "product_uid": "dacc5778-26a8-4f64-9a0e-e6209c07ef61",
+                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                "location_name": "Work Ez",
+                "image": "",
+                "name": "quidem",
+                "brand": "dolorum",
+                "specification": "Rerum illo enim vero voluptate ea consequatur delectus molestiae.",
+                "description": "Eligendi repudiandae occaecati totam consequatur numquam molestiae in.",
+                "markdown_description": "Eligendi repudiandae occaecati totam consequatur numquam molestiae in.",
+                "plain_text_description": "Eligendi repudiandae occaecati totam consequatur numquam molestiae in.",
+                "uom": "units",
+                "product_type": "PARTS",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 4902,
+                "discount": 0,
+                "purchase_price": 87622,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 4902,
+                "tax": {
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb10a",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "26ee75d0-aec5-4fda-a85c-10b7dea895d8",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "c6d3fd8a-b85f-4c96-8aa4-c38ac64c45ba",
+                    "product_id": "81614903",
+                    "product_category": {
+                        "category_uid": "a97f1bf1-e229-407e-9120-7b9ef920f36b",
+                        "category_name": "Portable Connect Device"
+                    },
+                    "brand": "aut",
+                    "specification": "Consequatur odio dolorem eveniet quia.",
+                    "product_name": "fugit",
+                    "product_type": "PARTS",
+                    "meta_data": [],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 3041,
+                    "purchase_price": 79315,
+                    "has_custom_tax": true,
+                    "tax": {
+                        "tax_rate": 11,
+                        "tax_name": "et",
+                        "tax_exempt": false,
+                        "_id": "682b0837452e44eaa664cb69"
+                    },
+                    "is_deleted": false,
+                    "created_at": "2025-05-19T10:30:15.339Z",
+                    "updated_at": "2025-05-19T10:30:15.341Z",
+                    "product_no": 8
+                },
+                "location": "66881fde552aa0cfe2b49e24",
+                "product_id": "81614903",
+                "product_uid": "c6d3fd8a-b85f-4c96-8aa4-c38ac64c45ba",
+                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                "location_name": "Work Ez",
+                "image": "",
+                "name": "fugit",
+                "brand": "aut",
+                "specification": "Consequatur odio dolorem eveniet quia.",
+                "description": "Officiis mollitia voluptas adipisci doloremque.",
+                "markdown_description": "Officiis mollitia voluptas adipisci doloremque.",
+                "plain_text_description": "Officiis mollitia voluptas adipisci doloremque.",
+                "uom": "mm",
+                "product_type": "PARTS",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 3041,
+                "discount": 0,
+                "purchase_price": 79315,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 3375.51,
+                "tax": {
+                    "tax_name": "et",
+                    "tax_rate": 11,
+                    "tax_amount": 334.51,
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb10b",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "660025a8-12e2-4ad6-8bf9-32e905c245a8",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "4a2788d3-9903-449b-bc68-73ccd230a10f",
+                    "product_id": "82852391",
+                    "product_category": {
+                        "category_uid": "e76ac623-3322-4b65-ae59-bcad95c7b9b0",
+                        "category_name": "Service"
+                    },
+                    "brand": "laborum",
+                    "specification": "Ipsum autem deleniti saepe eius.",
+                    "product_name": "animi",
+                    "product_type": "PARTS",
+                    "meta_data": [],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 87302,
+                    "purchase_price": 30329,
+                    "has_custom_tax": true,
+                    "tax": {
+                        "tax_rate": 16,
+                        "tax_name": "tenetur",
+                        "tax_exempt": false,
+                        "_id": "682b0837452e44eaa664cb6f"
+                    },
+                    "is_deleted": false,
+                    "created_at": "2025-05-19T10:30:15.373Z",
+                    "updated_at": "2025-05-19T10:30:15.376Z",
+                    "product_no": 9
+                },
+                "location": "66881fde552aa0cfe2b49e24",
+                "product_id": "82852391",
+                "product_uid": "4a2788d3-9903-449b-bc68-73ccd230a10f",
+                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                "location_name": "Work Ez",
+                "image": "",
+                "name": "animi",
+                "brand": "laborum",
+                "specification": "Ipsum autem deleniti saepe eius.",
+                "description": "Blanditiis dicta perferendis molestiae id saepe sit nam.",
+                "markdown_description": "Blanditiis dicta perferendis molestiae id saepe sit nam.",
+                "plain_text_description": "Blanditiis dicta perferendis molestiae id saepe sit nam.",
+                "uom": "cm",
+                "product_type": "PARTS",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 87302,
+                "discount": 0,
+                "purchase_price": 30329,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 101270.32,
+                "tax": {
+                    "tax_name": "tenetur",
+                    "tax_rate": 16,
+                    "tax_amount": 13968.32,
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb10c",
+                "taxes": []
+            },
+            {
+                "line_item_uid": "554a54fb-f3c4-494f-817e-ca307cd19f7f",
+                "line_item_type": "ITEM",
+                "product_ref_id": {
+                    "product_uid": "965b9e56-4132-461a-b465-613d3d74787d",
+                    "prefix": "",
+                    "product_id": "12344",
+                    "product_category": {
+                        "category_uid": "774cb588-caf7-4aec-a999-f042f6d68fc7",
+                        "category_name": "Product"
+                    },
+                    "brand": "",
+                    "specification": "",
+                    "product_name": "Test Produdt",
+                    "product_type": "PRODUCT",
+                    "meta_data": [],
+                    "location_availability": [
+                        {
+                            "location": {
+                                "location_uid": "7f7182a7-5ca9-4b78-bd18-e8474fbaa1a4",
+                                "location_name": "D-TX-San Antonio-Valr",
+                                "is_deleted": false
+                            }
+                        },
+                        {
+                            "location": {
+                                "location_uid": "0af8c876-68a5-4961-8fdf-86af042581e8",
+                                "location_name": "Work Ez",
+                                "is_deleted": false
+                            }
+                        }
+                    ],
+                    "price": 12,
+                    "purchase_price": null,
+                    "has_custom_tax": false,
+                    "tax": {
+                        "tax_exempt": false
+                    },
+                    "is_billable": true,
+                    "is_deleted": false,
+                    "created_at": "2025-05-23T12:56:53.173Z",
+                    "updated_at": "2025-05-23T12:57:33.566Z",
+                    "product_no": 10
+                },
+                "location": "67febec90039b4260bc44f8e",
+                "product_id": "12344",
+                "product_uid": "965b9e56-4132-461a-b465-613d3d74787d",
+                "location_uid": "7f7182a7-5ca9-4b78-bd18-e8474fbaa1a4",
+                "location_name": "D-TX-San Antonio-Valr",
+                "image": "",
+                "name": "Test Produdt",
+                "brand": "",
+                "specification": "",
+                "description": "",
+                "markdown_description": "",
+                "plain_text_description": "",
+                "uom": "",
+                "product_type": "PRODUCT",
+                "associated_products": [],
+                "quantity": 1,
+                "unit_price": 12,
+                "discount": 0,
+                "purchase_price": 12,
+                "serial_nos": [],
+                "discount_type": "FIXED",
+                "total": 12,
+                "tax": {
+                    "tax_exempt": false
+                },
+                "_id": "68528e766228e1b24d4fb10d",
+                "taxes": []
+            }
+        ],
+        "tax_exempt": false,
+        "sub_total": 194721.83,
+        "total_markup": 0,
+        "discount": {
+            "type": "PERCENTAGE",
+            "value": 0,
+            "percent": 0,
+            "discount_applicability": "LINE_ITEM",
+            "discount_label": "Discount",
+            "discount_fee_uid": null
+        },
+        "fees": [],
+        "total": 205530.95,
+        "total_discount": 0,
+        "remarks": "This is a sample Remarks",
+        "template": {
+            "template_uid": "eebeedd2-5f93-4d1b-82d0-14029c66dee4",
+            "template_name": "Proposal Commercial - Test",
+            "template_description": "Proposal Commercial - Test",
+            "render_engine": "PHANTOM",
+            "template_options": {
+                "format": "A4",
+                "orientation": "portrait",
+                "border": {
+                    "top": "10mm",
+                    "right": "10mm",
+                    "bottom": "10mm",
+                    "left": "10mm"
+                }
+            },
+            "type": "ESTIMATE",
+            "is_deleted": false,
+            "template": "<style>\n    * {\n        box-sizing: border-box;\n    }\n\n    body {\n        margin: 0;\n    }\n\n    * {\n        font-size: 8px;\n        font-family: Roboto, serif;\n        box-sizing: border-box;\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n        padding-top: 0px;\n        padding-right: 0px;\n        padding-bottom: 0px;\n        padding-left: 0px;\n    }\n\n    body {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    table {\n        break-inside: avoid;\n        overflow-x: visible !important;\n        overflow-y: visible !important;\n        border-top-width: initial !important;\n        border-right-width: initial !important;\n        border-bottom-width: initial !important;\n        border-left-width: initial !important;\n        border-top-style: none !important;\n        border-right-style: none !important;\n        border-bottom-style: none !important;\n        border-left-style: none !important;\n        border-top-color: initial !important;\n        border-right-color: initial !important;\n        border-bottom-color: initial !important;\n        border-left-color: initial !important;\n        border-image-source: initial !important;\n        border-image-slice: initial !important;\n        border-image-width: initial !important;\n        border-image-outset: initial !important;\n        border-image-repeat: initial !important;\n        border-collapse: collapse;\n        font-weight: normal;\n    }\n\n    tr,\n    th,\n    td {\n        padding-top: 2px;\n        padding-right: 5px;\n        padding-bottom: 2px;\n        padding-left: 5px;\n        border-top-width: initial !important;\n        border-right-width: initial !important;\n        border-bottom-width: initial !important;\n        border-left-width: initial !important;\n        border-top-style: none !important;\n        border-right-style: none !important;\n        border-bottom-style: none !important;\n        border-left-style: none !important;\n        border-top-color: initial !important;\n        border-right-color: initial !important;\n        border-bottom-color: initial !important;\n        border-left-color: initial !important;\n        border-image-source: initial !important;\n        border-image-slice: initial !important;\n        border-image-width: initial !important;\n        border-image-outset: initial !important;\n        border-image-repeat: initial !important;\n        border-collapse: collapse;\n        font-weight: normal;\n    }\n\n    thead {\n        display: table-header-group;\n    }\n\n    tfoot {\n        display: table-row-group;\n    }\n\n    tr {\n        break-inside: avoid;\n        break-before: avoid;\n        text-align: left;\n        padding-top: 5px;\n    }\n\n    .sheet {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n        overflow-x: hidden;\n        overflow-y: hidden;\n        position: relative;\n        box-sizing: border-box;\n        break-after: page;\n    }\n\n    body.A3 .sheet {\n        width: 297mm;\n        height: 419mm;\n    }\n\n    body.A3.landscape .sheet {\n        width: 420mm;\n        height: 296mm;\n    }\n\n    body.A4 .sheet {\n        width: 210mm;\n        min-height: 296mm;\n    }\n\n    body.A4.landscape .sheet {\n        width: 297mm;\n        height: 209mm;\n    }\n\n    body.A5 .sheet {\n        width: 148mm;\n        height: 209mm;\n    }\n\n    body.A5.landscape .sheet {\n        width: 210mm;\n        height: 147mm;\n    }\n\n    body.letter .sheet {\n        width: 216mm;\n        height: 279mm;\n    }\n\n    body.letter.landscape .sheet {\n        width: 280mm;\n        height: 215mm;\n    }\n\n    body.legal .sheet {\n        width: 216mm;\n        height: 356mm;\n    }\n\n    body.legal.landscape .sheet {\n        width: 357mm;\n        height: 215mm;\n    }\n\n    .sheet.padding-10mm {\n        padding-top: 10mm;\n        padding-right: 10mm;\n        padding-bottom: 10mm;\n        padding-left: 10mm;\n    }\n\n    .sheet.padding-15mm {\n        padding-top: 15mm;\n        padding-right: 15mm;\n        padding-bottom: 15mm;\n        padding-left: 15mm;\n    }\n\n    .sheet.padding-20mm {\n        padding-top: 20mm;\n        padding-right: 20mm;\n        padding-bottom: 20mm;\n        padding-left: 20mm;\n    }\n\n    .sheet.padding-25mm {\n        padding-top: 25mm;\n        padding-right: 25mm;\n        padding-bottom: 25mm;\n        padding-left: 25mm;\n    }\n\n    div.height {\n        height: 150px;\n    }\n\n    .td-center {\n        text-align: center;\n    }\n\n    .mb-1 {\n        margin-bottom: 8px;\n    }\n\n    .w-100 {\n        width: 100%;\n    }\n\n    .br-ln td {\n        border-top-width: 1px !important;\n        border-right-width: 1px !important;\n        border-bottom-width: 1px !important;\n        border-left-width: 1px !important;\n        border-top-style: solid !important;\n        border-right-style: solid !important;\n        border-bottom-style: solid !important;\n        border-left-style: solid !important;\n        border-top-color: black !important;\n        border-right-color: black !important;\n        border-bottom-color: black !important;\n        border-left-color: black !important;\n        border-image-source: initial !important;\n        border-image-slice: initial !important;\n        border-image-width: initial !important;\n        border-image-outset: initial !important;\n        border-image-repeat: initial !important;\n    }\n\n    .br-ln-grey td {\n        border-top-width: 1px !important;\n        border-right-width: 1px !important;\n        border-bottom-width: 1px !important;\n        border-left-width: 1px !important;\n        border-top-style: solid !important;\n        border-right-style: solid !important;\n        border-bottom-style: solid !important;\n        border-left-style: solid !important;\n        border-top-color: grey !important;\n        border-right-color: grey !important;\n        border-bottom-color: grey !important;\n        border-left-color: grey !important;\n        border-image-source: initial !important;\n        border-image-slice: initial !important;\n        border-image-width: initial !important;\n        border-image-outset: initial !important;\n        border-image-repeat: initial !important;\n    }\n\n    .mr-bt p {\n        margin-bottom: 6px;\n    }\n\n    td {\n        vertical-align: top;\n    }\n\n    #i413c {\n        text-align: left;\n    }\n\n    #i3wv9 {\n        width: 0%;\n    }\n\n    #iw7kx {\n        width: 60%;\n        text-align: center;\n    }\n\n    #ihbfl {\n        font-size: 18px;\n    }\n\n    #ief0g {\n        width: 20%;\n    }\n\n    #ii0wf {\n        display: inline-block;\n        width: 70%;\n        border-bottom-width: 1px !important;\n        border-bottom-style: solid !important;\n        border-bottom-color: black !important;\n    }\n\n    #i0x8i {\n        display: inline-block;\n        width: 62%;\n        border-bottom-width: 1px !important;\n        border-bottom-style: solid !important;\n        border-bottom-color: black !important;\n    }\n\n    #ijy03 {\n        display: inline-block;\n        width: 80%;\n        border-bottom-width: 1px !important;\n        border-bottom-style: solid !important;\n        border-bottom-color: black !important;\n    }\n\n    #ik9br {\n        text-align: center;\n        font-size: 12px;\n    }\n\n    #igwph {\n        width: 25%;\n    }\n\n    #i6dkh {\n        width: 25%;\n    }\n\n    #ielt6 {\n        width: 25%;\n    }\n\n    #ic5s8 {\n        width: 25%;\n    }\n\n    #iudsqy {\n        text-align: center;\n        font-size: 12px;\n    }\n\n    #iss6ck {\n        width: 30%;\n        height: 20%;\n    }\n\n    #i9hi64 {\n        width: 70%;\n    }\n\n    #it6s9h {\n        display: inline-block;\n        width: 80%;\n        border-bottom-width: 1px !important;\n        border-bottom-style: solid !important;\n        border-bottom-color: black !important;\n    }\n\n    #il834w {\n        width: 10%;\n        height: auto;\n    }\n\n    #ib6x5k {\n        width: 5%;\n    }\n\n    #iz1i9w {\n        width: 30%;\n    }\n\n    #ifnpv3 {\n        width: 5%;\n    }\n\n    #i3nm8j {\n        width: 30%;\n    }\n\n    #ioeopg {\n        width: 5%;\n    }\n\n    #iua3bx {\n        border-bottom-width: 1px !important;\n        border-bottom-style: solid !important;\n        border-bottom-color: black !important;\n    }\n\n    #in332f {\n        border-bottom-width: 1px !important;\n        border-bottom-style: solid !important;\n        border-bottom-color: black !important;\n    }\n\n    #i3078d {\n        border-bottom-width: 1px !important;\n        border-bottom-style: solid !important;\n        border-bottom-color: black !important;\n    }\n\n    @page {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    @page {\n        size: a4;\n    }\n\n    @page {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    @page {\n        size: a4;\n    }\n\n    @page {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    @page {\n        size: a4;\n    }\n\n    @page {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    @page {\n        size: a4;\n    }\n\n    @page {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    @page {\n        size: a4;\n    }\n\n    @page {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    @page {\n        size: a4;\n    }\n\n    @page {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    @page {\n        size: a4;\n    }\n\n    @page {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    @page {\n        size: a4;\n    }\n\n    @page {\n        margin-top: 0px;\n        margin-right: 0px;\n        margin-bottom: 0px;\n        margin-left: 0px;\n    }\n\n    @page {\n        size: a4;\n    }\n\n    @media screen {\n        body {\n            background-image: initial;\n            background-position-x: initial;\n            background-position-y: initial;\n            background-size: initial;\n            background-repeat: initial;\n            background-attachment: initial;\n            background-origin: initial;\n            background-clip: initial;\n            background-color: rgb(224, 224, 224);\n        }\n\n        .sheet {\n            background-image: initial;\n            background-position-x: initial;\n            background-position-y: initial;\n            background-size: initial;\n            background-repeat: initial;\n            background-attachment: initial;\n            background-origin: initial;\n            background-clip: initial;\n            background-color: white;\n            box-shadow: rgba(0, 0, 0, 0.3) 0px 0.5mm 2mm;\n            margin-top: 5mm;\n            margin-right: auto;\n            margin-bottom: 5mm;\n            margin-left: auto;\n        }\n    }\n\n    @media print {\n        body.A3.landscape {\n            width: 420mm;\n        }\n\n        body.A3,\n        body.A4.landscape {\n            width: 297mm;\n        }\n\n        body.A4,\n        body.A5.landscape {\n            width: 210mm;\n        }\n\n        body.A5 {\n            width: 148mm;\n        }\n\n        body.letter,\n        body.legal {\n            width: 216mm;\n        }\n\n        body.letter.landscape {\n            width: 280mm;\n        }\n\n        body.legal.landscape {\n            width: 357mm;\n        }\n    }\n</style>\n<meta charset=\"utf-8\" />\n<title>BID Worksheet Template</title>\n<link href=\"https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap\" rel=\"stylesheet\" />\n<link href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap\" rel=\"stylesheet\" />\n<link rel=\"stylesheet\" href=\"http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css\" />\n<link\n    href=\"https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap\"\n    rel=\"stylesheet\" />\n<link\n    href=\"https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100&display=swap\"\n    rel=\"stylesheet\" />\n<link href=\"https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&display=swap\" rel=\"stylesheet\" />\n<section class=\"sheet\">\n    <div>\n        <table class=\"w-100\">\n            <tbody>\n                <tr>\n                    <td id=\"i413c\"><img src=\"https://s3.ap-south-1.amazonaws.com/staging.in.pro.zuper/logo/9d13e606-801c-461c-8aec-77590370bd40.jpg\" alt=\"\" width=\"100px\"/>\n                    </td>\n                    <td id=\"i3wv9\"></td>\n                    <td id=\"iw7kx\">\n                        <p>Since 1934</p>\n                        <h1 id=\"ihbfl\">MLS CONTRACTING</h1>\n                        <p>1809 S. \"K\" Street, Tulare, CA 93274-6842</p>\n                        <p>(559) 686-8561 Contractors State Lic. 1120976</p>\n                        <p>www.morrislevin.com</p>\n                    </td>\n                    <td id=\"ief0g\">\n                        <p><b>QUOTE#</b> <span id=\"ii0wf\">{{ estimate_no }}</span></p>\n                        <p><b>PROPOSAL#</b><span id=\"i0x8i\"></span></p>\n                        <p><b>BY</b> <span id=\"ijy03\"> {{ created_by.first_name }} {{ created_by.last_name }}</span></p>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n    <h1 id=\"ik9br\">\n        PROPOSAL AND CONTRACT (COMMERCIAL)\n    </h1><br>\n    <table class=\"w-100\">\n        <tbody>\n            <tr>\n                <td id=\"igwph\"><b>CUSTOMER NAME:</b></td>\n                <td id=\"i6dkh\">{{#if customer}} {{ customer.customer_first_name }} {{/if}} {{#if customer}} {{\n                    customer.customer_last_name }} {{/if}}</td>\n                <td id=\"ielt6\"><b>OWNER OF PROPERTY</b></td>\n                <td id=\"ic5s8\">{{#if property}}{{#each property.custom_fields}} {{#if group_name}} {{else}} {{#stringEqStrict label 'Owner of Property' }} {{#if value}} {{value}} {{/if}} {{/stringEqStrict}} {{/if}} {{/each}} {{/if}}</td>\n            </tr>\n            <tr>\n                <td><b>BILLING ADDRESS:</b></td>\n                <td>{{ customer_billing_address.street }} {{ customer_billing_address.city }} {{\n                    customer_billing_address.state }} {{ customer_billing_address.zip_code }}</td>\n                <td><b>ADDRESS:</b></td>\n                <td>{{ customer_service_address.street }} {{ customer_service_address.city }} {{\n                    customer_service_address.state }} {{ customer_service_address.zip_code }}</td>\n            </tr>\n            <tr>\n                <td><b>TELEPHONE:</b></td>\n                <td> {{#if customer}} {{#if customer.customer_contact_no}} {{ customer.customer_contact_no.mobile }}\n                    {{/if}} {{/if}}</td>\n                <td><b>TELEPHONE:</b></td>\n                <td> {{#if customer}} {{#if customer.customer_contact_no}} {{ customer.customer_contact_no.home }}\n                    {{/if}} {{/if}}</td>\n            </tr>\n            <tr>\n                <td><b>DATE:</b></td>\n                <td>{{formatDateWithTimeZone estimate_date 'MM/DD/YYYY' timezone}}</td>\n                <td><b>JOB LOCATION:</b></td>\n                <td> {{ customer_billing_address.landmark }} {{ customer_billing_address.state }}</td>\n            </tr>\n        </tbody>\n    </table><br>\n    <h1>&nbsp;&nbsp;&nbsp;MLS Contracting is not responsible for utilities of any type below ground surface.</h1>\n    <br>\n    <h1>&nbsp;&nbsp;&nbsp;We propose to furnish all materials and perform all labor necessary to complete the following:</h1><br>\n <p class=\"mb-1\" style=\"border:1px solid black!important;text-align:center;display:inline-block;margin-left: 6px;\">{{#each custom_fields}} {{#if group_name}} {{else}} {{#stringEqStrict label 'Scope of Work' }} {{#if value}} {{value}} {{/if}} {{/stringEqStrict}} {{/if}} {{/each}}</p>\n    <b><table class=\"w-100\"><tbody><tr><td><p>This Proposal is void unless accepted by <b>{{formatDateWithTimeZone expiry_date 'MM/DD/YYYY' timezone}}</b>.\n    All work to be done in conformance with State and County Codes and\n    standard practices. Price includes all sales tax, labor and materials. Price does not include permits or bonds\n    unless specified.</p>\n<p>\n  The above work shall be completed for the sum of <b>${{total}}</b>\n  which shall be paid as follows: <br/>\n  Any alteration or deviation from the above specifications involving extra cost of material or labor will only be executed upon written orders for same and will become an extra charge over the contract price.\n</p>\n\n\n<br><b>See reverse for additional important terms of agreement.</b>\n    <p></p>\n    <h4 id=\"iudsqy\">\n        ACCEPTANCE\n    </h4>\n    <table class=\"w-100\">\n        <tbody>\n            <tr>\n                <td id=\"iss6ck\"><b>MLS Contracting</b></td>\n                <td id=\"i9hi64\">\n<style>\n  .container {\n    text-align: right; /* Align text to the right */\n  }\n  .content {\n    margin-left: 50px; /* Adjust margin as needed */\n  }\n  .underline {\n    text-decoration: underline; /* Underline text */\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"content\">\n    <span class=\"underline\"><b>BY</b> {{ created_by.first_name }} {{ created_by.last_name }}</span>\n  </div>\n\n</td>\n            </tr>\n        </tbody>\n    </table>\n    <p>You are hereby authorized to furnish all materials and labor required to complete the work mentioned in the above proposal, for which <b>{{#if customer}} {{ customer.customer_first_name }} {{/if}} {{#if customer}} {{ customer.customer_last_name }} {{/if}}</b> agree to pay the amount stated in said proposal, and according to the terms thereof. I also acknowledge receipt of Mechanics' Lien Law Notice on the reverse side.</p><br>\n\n    <table class=\"w-100\">\n        <tbody>\n            <tr>\n                <td id=\"il834w\"><b>DATE</b><br/>\n                                       <br/>\n                </td>\n                <td id=\"ib6x5k\"></td>\n                <td id=\"iz1i9w\"><b>PRINTED NAME OF CUSTOMER</b><br/>\n                </td>\n                <td id=\"ifnpv3\"></td>\n                <td id=\"i3nm8j\"><b>CUSTOMER SIGNATURE</b><br/>\n                </td>\n                <td id=\"ioeopg\"></td>\n            </tr>\n            <tr>\n            <td id=\"i3078d\"><br><br><br><br><br><br><br>\n            {{#each status_history}}\n                {{#stringEqStrict status_name \"APPROVED\"}}\n                    {{formatDateWithTimeZone created_at \"MM-DD-YYYY\" ../timezone}}\n                {{/stringEqStrict}}\n            {{/each}}\n        </td>\n        <td></td>\n                <td id=\"in332f\"><br><br><br><br><br><br>{{#each status_history}} {{#stringEqStrict status_name \"APPROVED\"}} {{#if ../customer}} {{../customer.customer_first_name }} {{/if}}{{#if ../customer}} {{ ../customer.customer_last_name }} {{/if}} {{/stringEqStrict}} {{/each}}</td>\n                <td></td>\n                <td id=\"iua3bx\"><br><br><br><br>{{#each status_history}} {{#stringEqStrict status_name \"APPROVED\"}} \n                    <img style=\"width:100px;height:40px;\" src=\"{{customer_signature}}\">\n                    {{/stringEqStrict}}{{/each}}</td>\n            </tr>\n        </tbody>\n    </table><br/>\n    <h1 class=\"td-center\">NOTICE TO OWNER</h1><br>\n    <p class=\"mb-1\">\n&#8195;\"Under the California Mechanics' Lien Law, any contractor, subcontractor, laborer, supplier, person\n        or entity who helps to improve your property, but is not paid for his or her work or supplies, has a right to\n        place a lien on your home, land, or property where the work was performed and to sue you in court to obtain\n        payment</p>\n    <p class=\"mb-1\">&#8195;This means that after a court hearing, your home, land, and property could be sold by a court\n        officer and the proceeds of the sale used to satisfy what you owe. This can happen even if you have paid your\n        contractor in full if the contractor's subcontractors, laborers, or suppliers remain unpaid. </p>\n    <p class=\"mb-1\">&#8195;To preserve their rights to file a claim or lien against your property, certain claimants such as\n        subcontractors or material suppliers are each required to provide you with a document called a \"Preliminary\n        Notice\"; Contractors and laborers who contract with owners directly do not have to provide such notice since you\n        are aware of their existence as an owner. A preliminary notice is not a lien against your property. Its purpose\n        is to notify you of persons or entities that may have a right to file a lien against your property if they are\n        not paid. In order to perfect their lien rights, a contractor, subcontractor, supplier, or laborer must file a\n        mechanics lien with the county recorder which then becomes a recorded lien against your property. Generally, the\n        maximum time allowed for filing a mechanics lien against your property is 90 days after substantial completion\n        of your project </p>\n    <p class=\"mb-1\">&#8195;TO INSURE EXTRA PROTECTION FOR YOURSELF AND YOUR PROPERTY, YOU MAY WISH TO TAKE ONE OR MORE OF THE\n        FOLLOWING STEPS: </p>\n    <p class=\"mb-1\">&#8195;(1) Require that your contractor supply you with a payment and performance bond (not a license\n        bond), which provides that the bonding company will either complete the project or pay damages up to the amount\n        of the bond. This payment and performance bond as well as a copy of the construction contract should be filed\n        with the county recorder for your further protection. The payment and performance\n        bond will usually cost from 1 to 5 percent of the contract amount depending on the contractor's bonding\n        ability.\n        If a contractor cannot obtain such bonding, it may indicate his or her financial incapacity.</p>\n    <p class=\"mb-1\">&#8195;(2) Require that payments be made directly to subcontractors and material suppliers through a joint\n        control. Funding services may be available,\n        for a fee, in your area which will establish voucher or other means of payment to your contractor. These\n        services may also provide you with lien waivers and other forms of protection. Any joint control agreement,\n        should include the addendum approved by the registrar.</p>\n    <p class=\"mb-1\">&#8195;(3) Issue joint checks for payment, made out to both your contractor and subcontractors or material\n        suppliers involved in the project.\n        The joint checks should be made payable to the persons or entities which send preliminary notices to you.\n        Those persons or entities have indicated that they may have lien rights on your property, therefore you need to\n        protect yourself. This will help to insure that all persons due payment are actually paid. </p>\n    <p class=\"mb-1\">&#8195;(4) Upon making payment on any completed phase of the project, and before making any further\n        payments,\n        require your contractor to provide you with unconditional \"Waiver and Release\" forms signed by each material\n        supplier, subcontractor, and\n        laborer involved in that portion of the work for which payment was made. The statutory lien releases are set\n        forth in exact language in Section 3262 of\n        the Civil Code. Most stationery stores will sell the \"Waiver and Release\" forms if your contractor does not have\n        them.\n        The material suppliers, subcontractors, and laborers that you obtain releases from are those persons or entities\n        who have filed preliminary notices with you. If you are not certain of the material suppliers, subcontractors, and\n        laborers working on your project, you may obtain a list from your contractor. On projects involving improvements\n        to a\n        single-family residence or a duplex owned by individuals,\n        the persons signing these releases lose the right to file a mechanics lien claim against your property. In other types of construction, this protection may still be important, but may not be as complete.<br/>\n       To protect yourself under this option, you must be certain that all materials suppliers, subcontractors, and laborers have signed the \"Waiver and Release\" form. If a mechanics' lien has been\n        filed against your  property, it can only be voluntarily released by a recorded \"Release of Mechanics' Lien\" signed by the person or entity that filled the mechanics liens against your property unless the lawsuit to enforce the lien was not timely filed. You should not make any final payments until any and all such lien are removed. You should consult an attorney if the lien  is filed against your property\".\n    </p> <br/>\n    <h1 class=\"td-center\">TERMS</h1>\n    <p class=\"mb-1\">\n    </p>\n    <p class=\"mb-1\">&#8195;(1) All work shall carry a warranty against defects in labor or materials for a period of ninety\n        days. All other warranties, including the implied warranties of merchantability and fitness for a particular\n        purpose are disclaimed. Customer's sole remedy shall be repair or replacement of defective work and materials.\n        Customer waives the right to recover damages for death or bodily injury to persons, injury to property or any other loss or expense except for loss arising from the sole negligence or wilful for death or bodily injury to persons, injury to property or any or wilful misconduct of\n        contractor or its agents or servants.</p>\n    <p class=\"mb-1\">&#8195;(2) Payment of all charges is due within 20 days following billing. Customer agrees to pay an\n        additional FINANCE CHARGE for all past due charges of 1.5% per month. (A. P. R.=18%).</p>\n    <p class=\"mb-1\">&#8195;(3) If customer fails to pay for charges when due, customer agrees to pay such attorneys fees and\n        costs as contractor may incur in enforcing his contractual rights under this agreement.</p>\n    <p class=\"mb-1\">&#8195;(4) Any dispute exceeding ten thousand dollars shall be submitted to binding arbitration under the\n        rules of the American Arbitration Association and the decision of the arbitrator shall be final. THE PARTIES\n        EACH SPECIFICALLY WAIVE THEIR RIGHT TO TRIAL, BY COURT OR BY JURY.</p>\n    <p class=\"mb-1\">&#8195;Contractors are required by law to be licensed and regulated by the Contractor's State License\n        Board, which has jurisdiction to investigate complaints against contractors if a complaint is filed within three\n        years of the date of the alleged violation. Any questions concerning a contractor may be referred to the\n        Registrar of the board whose address is:\n    </p>\n<div style=\"text-align:center;\">\n    <p class=\"mb-1\" style=\"border:1px solid black!important;text-align:center;display:inline-block;\">Contractors' State License Board P.O. Box 26000 Sacramento, California 95826</p>\n</div>\n    </td>\n    </tr>\n    </tbody>\n    </table></b>\n</section>"
+        },
+        "service_contract": null,
+        "tags": [],
+        "tax": [
+            {
+                "tax_id": {
+                    "tax_uid": "e1777500-caa3-467f-8c1c-c388ded2296f",
+                    "tax_name": "Service Tax",
+                    "tax_applicable_to": [],
+                    "tax_rate": 12,
+                    "is_local_tax": false,
+                    "applicable_to": [],
+                    "is_active": true
+                },
+                "tax_uid": "e1777500-caa3-467f-8c1c-c388ded2296f",
+                "tax_name": "Service Tax",
+                "tax_percent": 12,
+                "tax_amount": 10809.12,
+                "_id": "68528e766228e1b24d4fb10e"
+            }
+        ],
+        "taxation_meta": {
+            "tax_provider": null,
+            "status_history": []
+        },
+        "estimate_status": "DRAFT",
+        "custom_fields": [
+            {
+                "label": "Scope of Work",
+                "value": "This is a custom field Scope of Work",
+                "type": "MULTI_LINE",
+                "module_name": "PRODUCT",
+                "hide_to_fe": false,
+                "hide_field": false,
+                "read_only": false,
+                "_id": "68528e766228e1b24d4fb10f"
+            },
+            {
+                "label": "Notes:",
+                "value": "Hairline Breaks Present,Handrail,Holes,Pools,Prior Patching/Caulking,Puddling and Water Issues,Review Links,Sliding Slabs,Soil",
+                "type": "MULTI_ITEM",
+                "module_name": "PRODUCT",
+                "hide_to_fe": false,
+                "hide_field": false,
+                "read_only": false,
+                "_id": "68528e766228e1b24d4fb110"
+            }
+        ],
+        "status_history": [
+            {
+                "status_name": "DRAFT",
+                "done_by": {
+                    "user_uid": "a8bb307c-1d52-49ce-a199-09e5d0831b85",
+                    "first_name": "Thanveer",
+                    "last_name": "Admin",
+                    "email": "thanveer@zuper.co",
+                    "external_login_id": null,
+                    "home_phone_number": null,
+                    "designation": "Implementation",
+                    "emp_code": "Z320",
+                    "prefix": null,
+                    "work_phone_number": "6369391489",
+                    "mobile_phone_number": null,
+                    "profile_picture": null,
+                    "hourly_labor_charge": null,
+                    "is_active": true,
+                    "is_deleted": false,
+                    "created_at": "2024-07-05T13:37:05.000Z",
+                    "updated_at": "2024-07-05T13:37:05.000Z"
+                },
+                "done_by_type": "EMPLOYEE",
+                "_id": "68528e766228e1b24d4fb111",
+                "created_at": "2025-06-18T10:01:26.481Z",
+                "line_items_status": [],
+                "attachments": []
+            }
+        ],
+        "deposit": {
+            "payment_via": "PAYMENT_METHOD",
+            "is_void": false,
+            "is_credit_issued": false,
+            "credits": []
+        },
+        "is_expired": false,
+        "is_converted": false,
+        "is_deleted": false,
+        "is_active": true,
+        "created_by": {
+            "user_uid": "a8bb307c-1d52-49ce-a199-09e5d0831b85",
+            "first_name": "Thanveer",
+            "last_name": "Admin",
+            "email": "thanveer@zuper.co",
+            "external_login_id": null,
+            "home_phone_number": null,
+            "designation": "Implementation",
+            "emp_code": "Z320",
+            "prefix": null,
+            "work_phone_number": "6369391489",
+            "mobile_phone_number": null,
+            "profile_picture": null,
+            "hourly_labor_charge": null,
+            "is_active": true,
+            "is_deleted": false,
+            "created_at": "2024-07-05T13:37:05.000Z",
+            "updated_at": "2024-07-05T13:37:05.000Z"
+        },
+        "public_url": "https://stagingv2.zuperpro.com/api/customer_portal/estimates?company_uid=d928343d-f5f8-482f-9a65-73b33f249ea1&estimate_uid=2de70f67-90b2-4457-896a-5f574bcd5ba8&to=TestTemplate@123.com",
+        "financing": {
+            "promo_message": null,
+            "is_enabled": true
+        },
+        "proposal_title": "Test Project",
+        "attachments": [
+            {
+                "attachment_uid": "f064c9f1-f2a2-4312-ac3a-5d780f70ffd5",
+                "file_name": "Screenshot 2024-07-05 190443.png",
+                "url": "https://s3.ap-south-1.amazonaws.com/staging.in.pro.zuper/attachments/d928343d-f5f8-482f-9a65-73b33f249ea1/420c80e5-79e3-4bb7-8094-ac3712b18207.png",
+                "visible_to_customer": false,
+                "created_by": {
+                    "user_uid": "a8bb307c-1d52-49ce-a199-09e5d0831b85",
+                    "first_name": "Thanveer",
+                    "last_name": "Admin",
+                    "email": "thanveer@zuper.co",
+                    "external_login_id": null,
+                    "home_phone_number": null,
+                    "designation": "Implementation",
+                    "emp_code": "Z320",
+                    "prefix": null,
+                    "work_phone_number": "6369391489",
+                    "mobile_phone_number": null,
+                    "profile_picture": null,
+                    "hourly_labor_charge": null,
+                    "is_active": true,
+                    "is_deleted": false,
+                    "created_at": "2024-07-05T13:37:05.000Z",
+                    "updated_at": "2024-07-05T13:37:05.000Z"
+                },
+                "created_at": "2025-06-18T10:01:26.715Z",
+                "_id": "68528e76413df4d2f5201064"
+            }
+        ],
+        "notes": [],
+        "proposal_options": [],
+        "secondary_customers": [],
+        "created_at": "2025-06-18T10:01:26.482Z",
+        "updated_at": "2025-06-18T10:01:26.721Z",
+        "custom_field_internal_object": {
+            "estimate_scope_of_work_1": "This is a custom field Scope of Work",
+            "estimate_notes:_1": "Hairline Breaks Present,Handrail,Holes,Pools,Prior Patching/Caulking,Puddling and Water Issues,Review Links,Sliding Slabs,Soil"
+        },
+        "estimate_no": 44
+    }
+}
